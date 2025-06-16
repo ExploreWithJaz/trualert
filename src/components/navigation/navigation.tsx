@@ -19,7 +19,7 @@ function navigation() {
         </nav>
         <div>
           <button className='bg-[#920A0A] text-white text-[15px] px-6 py-2 rounded-md hover:bg-[#920a0a] transition duration-1000'>
-            <a href="/signup">Sign up</a>
+            <a href="/signup">Sign Up</a>
           </button>
         </div>
       </section>
