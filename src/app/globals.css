@@ -35,3 +35,25 @@ button {
   cursor: pointer;
   font-family: var(--font-sans);
 }
+
+@keyframes pillDotMove {
+  0% {
+    top: 12px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    top: calc(100% - 18px);
+    opacity: 1;
+  }
+  100% {
+    top: calc(100% - 18px);
+    opacity: 0;
+  }
+}
+
+.pill-dot-animate {
+  animation: pillDotMove 1.8s ease-in-out infinite;
+}
