@@ -30,10 +30,10 @@ function page() {
           </div>
         </section>
 
-        <section className='flex overflow-hidden mt-[45px] px-2.5'>
-          <div className='flex mx-75.5 py-2.5'>
+        <section className='flex justify-center items-center overflow-hidden mt-[45px] px-2.5 '>
+          <div className='flex mx-75.5 py-2.5 '>
             <div>
-              <img src="/phone.png" alt="Home Page Phone" />
+              <img className='h-auto w-auto' src="/phone.png" alt="Home Page Phone" />
             </div>
           </div>
         </section>
