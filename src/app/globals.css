@@ -55,5 +55,5 @@ button {
 }
 
 .pill-dot-animate {
-  animation: pillDotMove 1.8s ease-in-out infinite;
+  animation: pillDotMove 1.3s ease-in-out infinite;
 }
