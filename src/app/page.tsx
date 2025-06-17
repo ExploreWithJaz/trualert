@@ -1,6 +1,6 @@
 import React from 'react'
-import Navigation from '../components/navigation/navigation'
-import PillButton from '@/components/navigation/pillbutton'
+import Navigation from '../components/navigation'
+import PillButton from '@/components/pillbutton'
 // import Home from '../pages/home/home'
 
 function page() {
