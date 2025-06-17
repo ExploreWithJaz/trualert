@@ -29,6 +29,14 @@ function page() {
             </PillButton>
           </div>
         </section>
+
+        <section className='flex overflow-hidden mt-[45px] px-2.5'>
+          <div className='flex mx-75.5 py-2.5'>
+            <div>
+              <img src="/phone.png" alt="Home Page Phone" />
+            </div>
+          </div>
+        </section>
       </div>
     </>
   )
