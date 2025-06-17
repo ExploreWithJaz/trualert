@@ -37,6 +37,28 @@ function page() {
             </div>
           </div>
         </section>
+
+        <section>
+          <div className='my-35 px-20'>
+            <div className='flex flex-row items-center gap-15 text-center py-[27px] mx-[232.5px]'>
+              <img
+                className="w-[640px] h-[640px] object-cover object-center rounded-[60px]"
+                src="/people.png"
+                alt="People Talking"
+              />
+              <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px]">
+                <p className='text-lg text-[#FF0F0F]'>UNIFIED PROTECTION</p>
+                <h2  className='text-5xl/16 font-bold'>BUILDING SAFER COMMUNITIES</h2>
+                <p className='text-lg'>
+                  TRUalert is committed to keeping your campus safe and secure.
+                  Our dedicated security team works around the clock to ensure students feel protected,
+                  allowing you to focus on your studies, make the most of your college experience,
+                  and thrive in a safe environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   )
