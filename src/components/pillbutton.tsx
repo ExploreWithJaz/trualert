@@ -41,15 +41,26 @@ const PillButton: React.FC<PillButtonProps> = ({
   
   return (
     <>
-      <Component
-        href={href}
-        onClick={onClick}
-        className={`${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
-      >
-        <div 
-          className={`absolute ${dotSizes[size]} bg-white rounded-full left-1/2 transform -translate-x-1/2 pill-dot-animate`}
-        />
-      </Component>
+      {href ? (
+        <Component
+          href={href}
+          onClick={onClick}
+          className={`${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
+        >
+          <div
+            className={`absolute ${dotSizes[size]} bg-white rounded-full left-1/2 transform -translate-x-1/2 pill-dot-animate`}
+          />
+        </Component>
+      ) : (
+        <Component
+          onClick={onClick}
+          className={`${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
+        >
+          <div
+            className={`absolute ${dotSizes[size]} bg-white rounded-full left-1/2 transform -translate-x-1/2 pill-dot-animate`}
+          />
+        </Component>
+      )}
     </>
   );
 };

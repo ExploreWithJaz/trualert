@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from '../components/navigation'
 import PillButton from '@/components/pillbutton'
+import TruAlertScrollEffect from '@/components/TruAlertScrollEffect'
 // import Home from '../pages/home/home'
 
 function page() {
@@ -46,7 +47,7 @@ function page() {
                 src="/people.png"
                 alt="People Talking"
               />
-              <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px]">
+              <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px] tracking-wider">
                 <p className='text-lg text-[#FF0F0F]'>UNIFIED PROTECTION</p>
                 <h2  className='text-5xl/16 font-bold'>BUILDING SAFER COMMUNITIES</h2>
                 <p className='text-lg'>
@@ -61,9 +62,9 @@ function page() {
 
           <div className='px-20 m-0'>
             <div className='flex flex-row max-w-7xl justify-center items-center gap-15 p-0 mx-[232.5px]'>
-              <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px]]">
+              <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px] tracking-wider">
                 <p className='text-lg text-[#FF0F0F]'>ALWAYS READY, ALWAYS RELIABLE</p>
-                <h2 className='text-5xl/16 font-bold'>TRUSTED EMERGENCY HELP, JUST A TAP AWAY</h2>
+                <h2 className='text-5xl/16 font-bold'>TRUSTED<br /> EMERGENCY HELP,<br /> JUST A TAP AWAY</h2>
                 <p className='text-lg'>
                   With TRUalert, you're never alone. One tap connects you to Noonlight's professional dispatchers, 
                   who coordinate emergency response via SMS and calls—quick, discreet, 
@@ -77,12 +78,24 @@ function page() {
               />
             </div>
           </div>
-          
         </section>
 
-
-
-
+        <section className='px-20 m-0'>
+          <div className='flex flex-col gap-5 py-30 mx-[232.5px]'>
+            <div className='flex flex-col items-center justify-center text-center '>
+              <h2 className='text-[80px]/22 font-bold'>STAY SAFE ANYTIME, ANYWHERE WITH</h2>
+            </div>
+            <div className='flex justify-center items-center p-2.5'>
+              <img className='w-[390px] h-[100px]' src="/Logo-Horizontal-Dark-mode.svg" alt="TRUalert Darkmode Logo" />
+            </div>
+          </div>
+        </section>
+            
+        <section>
+          <div>
+            <TruAlertScrollEffect />
+          </div>
+        </section>
       </div>
     </>
   )
