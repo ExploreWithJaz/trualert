@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from '../components/navigation'
 import PillButton from '@/components/pillbutton'
-import TruAlertScrollEffect from '@/components/TruAlertScrollEffect'
+import ScrollEffect from '@/components/ScrollEffect'
 // import Home from '../pages/home/home'
 
 function page() {
@@ -91,10 +91,9 @@ function page() {
           </div>
         </section>
             
-        <section>
-          <div>
-            <TruAlertScrollEffect />
-          </div>
+        <section className="relative h-[300vh]">
+          {/* Scroll Sticky Effect Here */}
+          <ScrollEffect />
         </section>
       </div>
     </>
