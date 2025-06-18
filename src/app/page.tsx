@@ -40,7 +40,7 @@ function page() {
 
         <section>
           <div className='my-35 px-20'>
-            <div className='flex flex-row items-center gap-15 text-center py-[27px] mx-[232.5px]'>
+            <div className='flex flex-row max-w-7xl justify-center items-center gap-15 text-center py-[27px] mx-[232.5px]'>
               <img
                 className="w-[640px] h-[640px] object-cover object-center rounded-[60px]"
                 src="/people.png"
@@ -58,7 +58,31 @@ function page() {
               </div>
             </div>
           </div>
+
+          <div className='px-20 m-0'>
+            <div className='flex flex-row max-w-7xl justify-center items-center gap-15 p-0 mx-[232.5px]'>
+              <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px]]">
+                <p className='text-lg text-[#FF0F0F]'>ALWAYS READY, ALWAYS RELIABLE</p>
+                <h2 className='text-5xl/16 font-bold'>TRUSTED EMERGENCY HELP, JUST A TAP AWAY</h2>
+                <p className='text-lg'>
+                  With TRUalert, you're never alone. One tap connects you to Noonlight's professional dispatchers, 
+                  who coordinate emergency response via SMS and calls—quick, discreet, 
+                  and always ready when it matters most.
+                </p>
+              </div>
+              <img
+                className="w-[640px] h-[640px] object-cover object-center rounded-[60px]"
+                src="/people.png"
+                alt="People Talking"
+              />
+            </div>
+          </div>
+          
         </section>
+
+
+
+
       </div>
     </>
   )
