@@ -22,9 +22,9 @@ function footer() {
                     <div className='flex flex-col justify-between items-start w-max-full h-max-full w-[384px] h-[300px] text-sm'>
                         <div>
                             <p className='mb-[14.4px]'>Address</p>
-                            <p>Orange County, CA</p>
+                            <p className='text-[#9c9c9c]'>Orange County, CA</p>
                         </div>
-                        <p className='text-xs'>@ 2025 TRUalert</p>
+                        <p className='text-xs text-[#575757]'>@ 2025 TRUalert</p>
                     </div>
 
                     <div className='flex flex-col justify-between items-start w-max-full h-max-full w-[384px] h-[300px] text-sm'>
@@ -32,14 +32,14 @@ function footer() {
                             <div>
                                 <p className='mb-[14.4px]'>Pages</p>
                             </div>
-                            <div className='flex flex-col gap-2'>
+                            <div className='flex flex-col gap-2 text-[#9c9c9c]'>
                                 <a href="">About</a>
                                 <a href="">Terms</a>
                                 <a href="">Privacy and Security</a>
                                 <a href="">Blogs</a>
                             </div>
                         </div>
-                        <div className='flex flex-row text-xs'>
+                        <div className='flex flex-row text-xs text-[#575757]'>
                             <a className='mr-4.5' href="">Privacy and Security</a>
                             <a className='ml-4.5' href="">Terms</a>
                         </div>
@@ -50,7 +50,7 @@ function footer() {
                             <div>
                                 <p className='mb-[14.4px]'>Contact Us</p>
                             </div>
-                            <div>
+                            <div className='text-[#9c9c9c]'>
                                 <p>support@trualert.com</p>
                             </div>
                         </div>
