@@ -49,7 +49,7 @@ function page() {
               />
               <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px] tracking-wider">
                 <p className='text-lg text-[#FF0F0F]'>UNIFIED PROTECTION</p>
-                <h2  className='text-5xl/16 font-bold'>BUILDING SAFER COMMUNITIES</h2>
+                <h2 className='text-5xl/16 font-bold'>BUILDING SAFER COMMUNITIES</h2>
                 <p className='text-lg'>
                   TRUalert is committed to keeping your campus safe and secure.
                   Our dedicated security team works around the clock to ensure students feel protected,
@@ -66,8 +66,8 @@ function page() {
                 <p className='text-lg text-[#FF0F0F]'>ALWAYS READY, ALWAYS RELIABLE</p>
                 <h2 className='text-5xl/16 font-bold'>TRUSTED<br /> EMERGENCY HELP,<br /> JUST A TAP AWAY</h2>
                 <p className='text-lg'>
-                  With TRUalert, you're never alone. One tap connects you to Noonlight's professional dispatchers, 
-                  who coordinate emergency response via SMS and calls—quick, discreet, 
+                  With TRUalert, you're never alone. One tap connects you to Noonlight's professional dispatchers,
+                  who coordinate emergency response via SMS and calls—quick, discreet,
                   and always ready when it matters most.
                 </p>
               </div>
@@ -90,10 +90,37 @@ function page() {
             </div>
           </div>
         </section>
-            
-        <section className="relative h-[300vh]">
-          {/* Scroll Sticky Effect Here */}
+
+        <section className='mb-20'>
           <ScrollEffect />
+        </section>
+
+        <section>
+          <div className='px-20 m-0'>
+            <div className='flex flex-row items-center justify-center py-10 mx-[232.5px] gap-[79px]'>
+              <img className='h-[625.52px] w-[625.52px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Phone Screen Login" />
+              <div className='flex flex-col gap-5 text-left h-full w-[575.48px] tracking-wider'>
+                <div className='flex flex-col gap-5'>
+                  <p className='text-[32px] text-[#FF0F0F] font-semibold'>EVOLVING FOR A</p>
+                  <h2 className='text-[80px]/21 font-bold'>
+                    SAFER, SMARTER FUTURE & BEYOND
+                  </h2>
+                  <div className='flex flex-row gap-5'>
+                    <img className='w-[161px] h-[47px]' src="/app-store-download.svg" alt="App Store Download Button" />
+                    <img className='w-[161px] h-[47px]' src="/google-play-button.svg" alt="Google Play Download Button" />
+                  </div>
+                </div>
+                <div className='p-2.5'>
+                  <ul className='flex flex-row gap-10 text-sm'>
+                    <li>© 2025 TRUalert</li>
+                    <li><a className='text-[#FF0F0F] hover:text-[#FFFFFF] transition duration-300 ease-in-out' href="">Privacy & Security</a></li>
+                    <li><a className='text-[#FF0F0F] hover:text-[#FFFFFF] transition duration-300 ease-in-out' href="">Terms</a></li>
+                    <li><a href="">Pricing</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </>
