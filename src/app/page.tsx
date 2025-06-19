@@ -91,17 +91,17 @@ function page() {
           </div>
         </section>
 
-        <section className='mb-20'>
+        <section>
           <ScrollEffect />
         </section>
 
         <section>
           <div className='px-20 m-0'>
-            <div className='flex flex-row items-center justify-center py-10 mx-[232.5px] gap-[79px]'>
+            <div className='flex flex-row items-end justify-center py-10 mx-[232.5px] gap-[79px]'>
               <img className='h-[625.52px] w-[625.52px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Phone Screen Login" />
-              <div className='flex flex-col gap-5 text-left h-full w-[575.48px] tracking-wider'>
+              <div className='flex flex-col  gap-10 text-left h-full w-[575.48px] tracking-wider'>
                 <div className='flex flex-col gap-5'>
-                  <p className='text-[32px] text-[#FF0F0F] font-semibold'>EVOLVING FOR A</p>
+                  <p className='text-[32px] text-[#FF0F0F] font-semibold mb-[14.4px]'>EVOLVING FOR A</p>
                   <h2 className='text-[80px]/21 font-bold'>
                     SAFER, SMARTER FUTURE & BEYOND
                   </h2>
