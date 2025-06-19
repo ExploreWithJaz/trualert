@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from '../components/navigation'
+import Footer from '@/components/footer'
 import PillButton from '@/components/pillbutton'
 import ScrollEffect from '@/components/ScrollEffect'
 // import Home from '../pages/home/home'
@@ -123,6 +124,7 @@ function page() {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   )
 }
