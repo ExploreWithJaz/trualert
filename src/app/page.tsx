@@ -22,8 +22,8 @@ function page() {
             </p>
           </div>
           <div className='flex justify-center items-center w-full gap-4 mx-15 p-2.5'>
-            <img className='w-[161px] h-[47px]' src="/app-store-download.svg" alt="App Store Download Button" />
-            <img className='w-[161px] h-[47px]' src="/google-play-button.svg" alt="Google Play Download Button" />
+            <img className='w-[161px] h-[47px]' src="/App-Store.png" alt="App Store Download Button" />
+            <img className='w-[161px] h-[47px]' src="/Google-Play.png" alt="Google Play Download Button" />
           </div>
           <div>
             <PillButton href="" size="small" variant="default" className="text-white font-bold">
@@ -107,8 +107,8 @@ function page() {
                     SAFER, SMARTER FUTURE & BEYOND
                   </h2>
                   <div className='flex flex-row gap-5'>
-                    <img className='w-[161px] h-[47px]' src="/app-store-download.svg" alt="App Store Download Button" />
-                    <img className='w-[161px] h-[47px]' src="/google-play-button.svg" alt="Google Play Download Button" />
+                    <img className='w-[161px] h-[47px]' src="/App-Store.png" alt="App Store Download Button" />
+                    <img className='w-[161px] h-[47px]' src="/Google-Play.png" alt="Google Play Download Button" />
                   </div>
                 </div>
                 <div className='p-2.5'>
