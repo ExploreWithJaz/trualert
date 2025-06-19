@@ -16,7 +16,7 @@ function footer() {
                     </div>
                 </div>
                 
-                <div className='border-b border-b-amber-600 border-solid my-5'></div>
+                <div className='border-b border-b-[#525252] border-solid my-5'></div>
                 
                 <div className='flex flex-row gap-5'>
                     <div className='flex flex-col justify-between items-start w-max-full h-max-full w-[384px] h-[300px] text-sm'>
@@ -24,7 +24,7 @@ function footer() {
                             <p className='mb-[14.4px]'>Address</p>
                             <p className='text-[#9c9c9c]'>Orange County, CA</p>
                         </div>
-                        <p className='text-xs text-[#575757]'>@ 2025 TRUalert</p>
+                        <p className='text-xs text-[#6d6d6d] font-bold'>@ 2025 TRUalert</p>
                     </div>
 
                     <div className='flex flex-col justify-between items-start w-max-full h-max-full w-[384px] h-[300px] text-sm'>
@@ -32,15 +32,15 @@ function footer() {
                             <div>
                                 <p className='mb-[14.4px]'>Pages</p>
                             </div>
-                            <div className='flex flex-col gap-2 text-[#9c9c9c]'>
+                            <div className='flex flex-col gap-1.5 text-[#9c9c9c]'>
                                 <a href="">About</a>
                                 <a href="">Terms</a>
                                 <a href="">Privacy and Security</a>
                                 <a href="">Blogs</a>
                             </div>
                         </div>
-                        <div className='flex flex-row text-xs text-[#575757]'>
-                            <a className='mr-4.5' href="">Privacy and Security</a>
+                        <div className='flex flex-row text-xs text-[#6d6d6d] font-bold'>
+                            <a className='mr-4.5' href="">Privacy & Security</a>
                             <a className='ml-4.5' href="">Terms</a>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ function footer() {
                                 <a className='bg-[#333333] w-10 h-10 rounded-full flex justify-center items-center' href=""><svg width="20px" height="20px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>youtube-filled</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="icon" fill="#ffffff" transform="translate(42.666738, 106.667236)"> <path d="M214.304705,0.000543068834 C226.424729,0.0216871426 348.414862,0.444568619 380.010595,8.90219814 C398.378595,13.7775234 412.821262,28.1915286 417.749262,46.6329765 C426.309902,78.5811951 426.652328,143.739282 426.666025,148.900811 L426.666025,149.553735 C426.652328,154.730893 426.309902,220.084332 417.749262,252.032551 C412.821262,270.473998 398.378595,284.888004 380.010595,289.763329 C347.417102,298.488042 218.629945,298.662536 213.491496,298.666026 L213.175003,298.666026 C208.035726,298.662536 79.2276622,298.488042 46.6132622,289.763329 C28.2665955,284.888004 13.8025955,270.473998 8.89592883,252.032551 C0.355768832,220.084332 0.014162432,154.730893 0.000498176,149.553735 L0.000498176,148.900811 C0.014162432,143.739282 0.355768832,78.5811951 8.89592883,46.6329765 C13.8025955,28.1915286 28.2665955,13.7775234 46.6132622,8.90219814 C78.2292622,0.444568619 200.239662,0.0216871426 212.361662,0.000543068834 Z M169.685262,86.2714908 L169.685262,212.394036 L281.215929,149.226778 L169.685262,86.2714908 Z" id="Shape"> </path> </g> </g> </g></svg></a>
                             </div>
                             <div>
-                                <a href="">Arrow Up</a>
+                                <a className='flex justify-center items-center bg-[#FF0F0F] w-[47px] h-[44.75px] rounded-full' href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></a>
                             </div>
                         </div>
                     </div>
