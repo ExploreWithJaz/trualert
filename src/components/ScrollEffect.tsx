@@ -74,27 +74,27 @@ const ScrollEffect: React.FC = () => {
 
   return (
     <div className="relative w-full" ref={containerRef}>
-      {/* Sticky Phone Container - Will stay centered */}
-      <div className="sticky top-0 left-0 right-0 bottom-0 h-screen px-20">
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-[600px] flex items-center justify-center">
-          <img
-            src={sections[activeIndex]?.image}
-            alt="Phone"
-            className="w-[300px] max-w-full max-h-full object-contain transition-all duration-700 ease-in-out"
-            style={{ filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))' }}
-          />
-        </div>
+    {/* Sticky Phone Container - Will stay centered */}
+    <div className="sticky top-0 left-0 right-0 bottom-0 h-screen px-20">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-[600px] flex items-center justify-center">
+        <img
+          src={sections[activeIndex]?.image}
+          alt="Phone"
+          className="w-[300px] max-w-full max-h-full object-contain transition-all duration-700 ease-in-out"
+          style={{ filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))' }}
+        />
       </div>
+    </div>
 
-      {/* Scrollable Content */}
-      <div className="relative ">
-        {sections.map((section, idx) => (
-          <div
-            key={idx}
-            ref={(el) => { sectionRefs.current[idx] = el; }}
-            data-index={idx}
-            className="h-[635px] flex items-center px-20"
-          >
+    {/* Scrollable Content */}
+    <div className="relative">
+      {sections.map((section, idx) => (
+        <div
+          key={idx}
+          ref={(el) => { sectionRefs.current[idx] = el; }}
+          data-index={idx}
+          className="h-[635px] flex items-center px-20"
+        >
             <div className="w-full max-w-[1140px] mx-auto">
               <div
                 className={`flex items-center ${section.position === 'left'
@@ -119,6 +119,8 @@ const ScrollEffect: React.FC = () => {
             </div>
           </div>
         ))}
+        {/* Add spacer div after all sections */}
+      <div className="h-[15vh]"></div>
       </div>
     </div>
   );
