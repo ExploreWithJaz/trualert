@@ -33,7 +33,6 @@ function page() {
           </div>
           <div>
             <PillButton size="small" variant="default" className="text-white font-bold" scrollToTop={true} scrollOptions={{ duration: 800, behavior: 'smooth' }}>
-              
             </PillButton>
           </div>
         </section>
