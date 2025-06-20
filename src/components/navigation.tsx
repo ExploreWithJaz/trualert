@@ -10,11 +10,11 @@ function navigation() {
         </div>
         <nav>
           <div className='flex text-md'>  
-            <a className='mx-1.5 p-2' href="/about">About</a>
-            <a className='mx-1.5 p-2' href="/blogs">Blogs</a>
-            <a className='mx-1.5 p-2' href="/product">Product</a>
-            <a className='mx-1.5 p-2' href="/pricing">Pricing</a>
-            <a className='mx-1.5 p-2' href="/support">Support</a>
+            <a className='mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500' href="/about">About</a>
+            <a className='mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500' href="/blogs">Blogs</a>
+            <a className='mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500' href="/product">Product</a>
+            <a className='mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500' href="/pricing">Pricing</a>
+            <a className='mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500' href="/support">Support</a>
           </div>
         </nav>
         <div>
