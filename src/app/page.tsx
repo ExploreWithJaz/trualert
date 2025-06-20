@@ -2,7 +2,9 @@ import React from 'react'
 import Navigation from '../components/navigation'
 import Footer from '@/components/footer'
 import PillButton from '@/components/pillbutton'
+import PulseEffect from '@/components/PulseAnimation'
 import ScrollEffect from '@/components/ScrollEffect'
+
 // import Home from '../pages/home/home'
 
 function page() {
@@ -32,10 +34,21 @@ function page() {
           </div>
         </section>
 
-        <section className='flex justify-center items-center overflow-hidden mt-[45px] px-2.5 '>
-          <div className='flex mx-75.5 py-2.5 '>
-            <div>
-              <img className='h-auto w-auto' src="/phone.png" alt="Home Page Phone" />
+        <section className="w-full">
+          <div className='mt-[45px] px-2.5'>
+            <div className='flex justify-center w-full py-2.5'>
+              <div className="w-[1280px] h-[619px] flex justify-center items-center">
+                <div className="relative w-[300px] h-auto mx-auto">
+                  <div className="absolute inset-0 z-0 flex justify-center items-center">
+                    <PulseEffect />
+                  </div>
+                  <img
+                    src="https://trualert.com/wp-content/uploads/2025/05/homepage.png"
+                    alt="Phone"
+                    className="relative z-10 w-full h-auto"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
