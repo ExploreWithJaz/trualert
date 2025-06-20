@@ -5,20 +5,19 @@ import React from 'react';
 const PulseEffect: React.FC = () => {
   return (
     <>
-      {/* Wrapper centered relative to phone screen */}
       <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0">
         {/* First pulse */}
-        <div className="w-48 h-48 bg-[#666060]/80 rounded-full animate-pulse-large-slow" />
+        <div className="w-48 h-48 bg-[#666060] rounded-full animate-pulse-large-fast" />
 
         {/* Second pulse with delay */}
         <div
-          className="w-48 h-48 bg-[#666060]/50 rounded-full animate-pulse-large-slow absolute top-0 left-0"
-          style={{ animationDelay: '1s' }}
+          className="w-48 h-48 bg-[#666060] rounded-full animate-pulse-large-fast absolute top-0 left-0"
+          style={{ animationDelay: '0.75s' }} // Half of 1.5s
         />
       </div>
 
       <style jsx>{`
-        @keyframes pulse-large-slow {
+        @keyframes pulse-large-fast {
           0% {
             transform: scale(0);
             opacity: 0.5;
@@ -31,8 +30,8 @@ const PulseEffect: React.FC = () => {
             opacity: 0;
           }
         }
-        .animate-pulse-large-slow {
-          animation: pulse-large-slow 4s ease-out infinite;
+        .animate-pulse-large-fast {
+          animation: pulse-large-fast 2s ease-out infinite;
         }
       `}</style>
     </>
