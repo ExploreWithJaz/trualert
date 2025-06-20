@@ -24,12 +24,16 @@ function page() {
             </p>
           </div>
           <div className='flex justify-center items-center w-full gap-4 mx-15 p-2.5'>
-            <img className='w-[161px] h-[47px]' src="/App-Store.png" alt="App Store Download Button" />
-            <img className='w-[161px] h-[47px]' src="/Google-Play.png" alt="Google Play Download Button" />
+            <a href="https://apps.apple.com/us/app/trualert/id6503326659">
+              <img className='w-[161px] h-[47px]' src="/App-Store.png" alt="App Store Download Button" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.pixeloha.trualert">
+              <img className='w-[161px] h-[47px]' src="/Google-Play.png" alt="Google Play Download Button" />
+            </a>
           </div>
           <div>
-            <PillButton href="" size="small" variant="default" className="text-white font-bold">
-              Button
+            <PillButton size="small" variant="default" className="text-white font-bold" scrollToTop={true} scrollOptions={{ duration: 800, behavior: 'smooth' }}>
+              
             </PillButton>
           </div>
         </section>
@@ -120,8 +124,12 @@ function page() {
                     SAFER, SMARTER FUTURE & BEYOND
                   </h2>
                   <div className='flex flex-row gap-5'>
-                    <img className='w-[161px] h-[47px]' src="/App-Store.png" alt="App Store Download Button" />
-                    <img className='w-[161px] h-[47px]' src="/Google-Play.png" alt="Google Play Download Button" />
+                    <a href="https://apps.apple.com/us/app/trualert/id6503326659">
+                      <img className='w-[161px] h-[47px]' src="/App-Store.png" alt="App Store Download Button" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.pixeloha.trualert">
+                      <img className='w-[161px] h-[47px]' src="/Google-Play.png" alt="Google Play Download Button" />
+                    </a>
                   </div>
                 </div>
                 <div className='p-2.5'>

@@ -1,5 +1,7 @@
-// PillButton.tsx
+'use client';
+
 import React from 'react';
+import { useScrollToTop } from './useScrollToTop';
 
 interface PillButtonProps {
   onClick?: () => void;
@@ -7,7 +9,12 @@ interface PillButtonProps {
   className?: string;
   size?: 'small' | 'medium' | 'large';
   variant?: 'default' | 'colored';
-  children?: React.ReactNode
+  children?: React.ReactNode;
+  scrollToTop?: boolean; // New prop to enable scroll to top
+  scrollOptions?: {
+    duration?: number;
+    behavior?: 'smooth' | 'instant' | 'auto';
+  };
 }
 
 const PillButton: React.FC<PillButtonProps> = ({ 
@@ -15,8 +22,13 @@ const PillButton: React.FC<PillButtonProps> = ({
   href, 
   className = "", 
   size = "small",
-  variant = "default" 
+  variant = "default",
+  children,
+  scrollToTop = false,
+  scrollOptions = {}
 }) => {
+  const scrollToTopFn = useScrollToTop(scrollOptions);
+  
   const baseClasses = "relative inline-block border rounded-full transition-all duration-300 cursor-pointer overflow-hidden";
   
   const sizeClasses = {
@@ -37,6 +49,16 @@ const PillButton: React.FC<PillButtonProps> = ({
     large: "w-2.5 h-2.5"
   };
 
+  const handleClick = (e: React.MouseEvent) => {
+    if (scrollToTop) {
+      e.preventDefault();
+      scrollToTopFn();
+    }
+    if (onClick) {
+      onClick();
+    }
+  };
+
   const Component = href ? 'a' : 'button';
   
   return (
@@ -44,21 +66,23 @@ const PillButton: React.FC<PillButtonProps> = ({
       {href ? (
         <Component
           href={href}
-          onClick={onClick}
+          onClick={handleClick}
           className={`${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
         >
           <div
             className={`absolute ${dotSizes[size]} bg-white rounded-full left-1/2 transform -translate-x-1/2 pill-dot-animate`}
           />
+          {children}
         </Component>
       ) : (
         <Component
-          onClick={onClick}
+          onClick={handleClick}
           className={`${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
         >
           <div
             className={`absolute ${dotSizes[size]} bg-white rounded-full left-1/2 transform -translate-x-1/2 pill-dot-animate`}
           />
+          {children}
         </Component>
       )}
     </>
@@ -66,19 +90,3 @@ const PillButton: React.FC<PillButtonProps> = ({
 };
 
 export default PillButton;
-
-// Alternative: Add this CSS to your global styles instead of using styled-jsx:
-/*
-@keyframes pillDotMove {
-  0%, 100% {
-    top: 12px;
-  }
-  50% {
-    top: calc(100% - 18px);
-  }
-}
-
-.pill-dot-animate {
-  animation: pillDotMove 1.8s ease-in-out infinite;
-}
-*/
