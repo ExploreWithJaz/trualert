@@ -26,23 +26,28 @@ function page() {
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
-          filter: 'invert(100%) brightness(10.18) contrast(1.5) saturate(0.6) hue-rotate(180deg) blur(1px) invert(100%) brightness(0.1)',
+          filter: 'invert(100%) brightness(10.18) contrast(1.5) saturate(0.6) hue-rotate(180deg) invert(100%) brightness(0.1)',
+          // Only for mobile: make sure it stays behind and covers
+    minHeight: '100vh',
+    width: '100vw',
+    left: 0,
+    top: 0,
         }}
       ></div>
 
-      {/* <div className='mt-20 px-2'>
+      <div className='mt-15 px-5 sm:mt-20 sm:px-2'>
         <section className='flex flex-col items-center max-w-[850px] mx-auto py-2.5 gap-5 text-center'>
-          <div className='text-[80px]/21 font-bold w-full'>
+          <div className='text-[47px]/13 sm:text-[80px]/21 font-bold w-full'>
             <h1>
               EMERGENCY AID, JUST A <span className='text-[#ff0f0f]'>TAP AWAY</span>
             </h1>
           </div>
-          <div className='w-[588.8px] h-auto mb-3.5 '>
-            <p className='text-white text-lg text-center leading-7 tracking-wider'>
+          <div className='w-max-[588.8px] h-auto mb-3.5 '>
+            <p className='text-white text-md sm:text-lg text-center leading-7 sm:tracking-wider'>
               Experience peace of mind knowing help is just a tap away. TRUalert instantly connects you to professional emergency dispatchers via Noonlight—no tracking, no delays, just real help when you need it most.
             </p>
           </div>
-          <div className='flex justify-center items-center w-full gap-4 mx-15 p-2.5'>
+          <div className='flex flex-wrap justify-center items-center w-full gap-4 mx-15 p-2.5'>
             <a href="https://apps.apple.com/us/app/trualert/id6503326659">
               <img className='w-[161px] h-[47px]' src="/App-Store.png" alt="App Store Download Button" />
             </a>
@@ -60,14 +65,14 @@ function page() {
           <div className='mt-[45px] px-2.5'>
             <div className='flex justify-center w-full py-2.5'>
               <div className="w-[1280px] h-[619px] flex justify-center items-center">
-                <div className="relative w-[300px] h-auto mx-auto">
+                <div className="relative w-[300px] flex justify-center h-auto mx-auto">
                   <div className="absolute inset-0 z-0 flex justify-center items-center">
                     <PulseEffect />
                   </div>
                   <img
                     src="https://trualert.com/wp-content/uploads/2025/05/homepage.png"
                     alt="Phone"
-                    className="relative z-10 w-full h-auto"
+                    className="relative z-10 w-[280px] sm:w-full h-auto"
                   />
                 </div>
               </div>
@@ -76,18 +81,18 @@ function page() {
         </section>
 
         <section>
-          <div className='my-35 px-20'>
-            <div className='flex flex-row max-w-7xl justify-center items-center gap-15 text-center py-[27px] mx-[232.5px]'>
+          <div className='my-25 sm:px-20 sm:my-35'>
+            <div className='flex flex-col-reverse sm:flex-row flex-wrap max-w-7xl justify-center items-center gap-8 text-center py-7 mx-auto'>
               <img
-                className="w-[640px] h-[640px] object-cover object-center rounded-[60px]"
+                className="w-full max-w-[280px] sm:max-w-[640px] h-auto object-cover object-center rounded-[29px] sm:rounded-[60px] mb-6 sm:mb-0"
                 src="/people.png"
                 alt="People Talking"
                 data-aos="fade-up"
               />
-              <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px] tracking-wider" data-aos="fade-up" data-aos-delay="200">
-                <p className='text-lg text-[#FF0F0F]'>UNIFIED PROTECTION</p>
-                <h2 className='text-5xl/16 font-bold'>BUILDING SAFER COMMUNITIES</h2>
-                <p className='text-lg'>
+              <div className="flex flex-col items-start gap-5 text-left h-full w-full max-w-[537.59px] tracking-wide sm:tracking-wider" data-aos="fade-up" data-aos-delay="200">
+                <p className='text-sm sm:text-lg text-[#FF0F0F]'>UNIFIED PROTECTION</p>
+                <h2 className='text-4xl/12 sm:text-5xl font-bold'>BUILDING SAFER COMMUNITIES</h2>
+                <p className='text-md sm:text-lg'>
                   TRUalert is committed to keeping your campus safe and secure.
                   Our dedicated security team works around the clock to ensure students feel protected,
                   allowing you to focus on your studies, make the most of your college experience,
@@ -97,20 +102,20 @@ function page() {
             </div>
           </div>
 
-          <div className='px-20 m-0'>
-            <div className='flex flex-row max-w-7xl justify-center items-center gap-15 p-0 mx-[232.5px]'>
-              <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px] tracking-wider" data-aos="fade-up" data-aos-delay="200">
-                <p className='text-lg text-[#FF0F0F]'>ALWAYS READY, ALWAYS RELIABLE</p>
-                <h2 className='text-5xl/16 font-bold'>TRUSTED<br /> EMERGENCY HELP,<br /> JUST A TAP AWAY</h2>
-                <p className='text-lg'>
+          <div className='px-0 sm:px-20 m-0'>
+            <div className='flex flex-col sm:flex-row max-w-7xl justify-center items-center gap-8 p-0 mx-auto'>
+              <div className="flex flex-col items-start gap-5 text-left h-full w-full max-w-[537.59px] tracking-wider" data-aos="fade-up" data-aos-delay="200">
+                <p className='text-sm sm:text-lg text-[#FF0F0F]'>ALWAYS READY, ALWAYS RELIABLE</p>
+                <h2 className='text-[40px]/12 sm:text-5xl font-bold'>TRUSTED<br /> EMERGENCY HELP, JUST A TAP AWAY</h2>
+                <p className='text-md sm:text-lg'>
                   With TRUalert, you're never alone. One tap connects you to Noonlight's professional dispatchers,
                   who coordinate emergency response via SMS and calls—quick, discreet,
                   and always ready when it matters most.
                 </p>
               </div>
               <img
-                className="w-[640px] h-[640px] object-cover object-center rounded-[60px]"
-                src="/people.png"
+                className="w-full max-w-[280px] sm:max-w-[640px] h-auto object-cover object-center rounded-[29px] sm:rounded-[60px] mb-6 sm:mb-0"
+                src="/security.png"
                 alt="People Talking"
                 data-aos="fade-up"
               />
@@ -118,19 +123,44 @@ function page() {
           </div>
         </section>
 
-        <section className='px-20 m-0' data-aos="fade-up">
-          <div className='flex flex-col gap-5 py-30 mx-[232.5px]'>
+        <section className='px-10 sm:px-20 sm:m-0' data-aos="fade-up">
+          <div className='flex flex-col gap-5 py-20 mx-0 sm:py-30 sm:mx-[232.5px]'>
             <div className='flex flex-col items-center justify-center text-center '>
-              <h2 className='text-[80px]/22 font-bold'>STAY SAFE ANYTIME, ANYWHERE WITH</h2>
+              <h2 className='text-5xl sm:text-[80px]/22 font-bold'>STAY SAFE ANYTIME, ANYWHERE WITH</h2>
             </div>
-            <div className='flex justify-center items-center p-2.5'>
-              <img className='w-[390px] h-[200px]' src="/Logo-Horizontal-Dark-mode.svg" alt="TRUalert Darkmode Logo" />
+            <div className='flex justify-center items-center p-0 sm:p-2.5'>
+              <img className='w-[240px] h-[100px] sm:w-[390px] sm:h-[200px]' src="/Logo-Horizontal-Dark-mode.svg" alt="TRUalert Darkmode Logo" />
             </div>
           </div>
         </section>
 
         <section data-aos="fade-up">
-          <ScrollEffect />
+          <div className='hidden sm:block'>
+            <ScrollEffect />
+          </div>
+          <div className='flex flex-col justify-between items-center gap-25 sm:hidden pb-25'>
+            <div className='flex flex-col items-center gap-5'>
+              <div className='flex flex-col gap-5 text-center p-5'>
+                <h3 className='text-3xl font-bold'>AFFORDABLE SUBSCRIPTION</h3>
+                <p className='text-md mb-[14.4px]'>Choose the subscription plan that perfectly fits your needs and preferences.</p>
+              </div>
+              <img className='w-[250px] h-auto' src="https://trualert.com/wp-content/uploads/2025/05/Group-39265-1.png" alt="TRUalert Pricing Phone" />
+            </div>
+            <div className='flex flex-col items-center gap-5'>
+              <div className='flex flex-col gap-5 text-center p-5'>
+                <h3 className='text-3xl font-bold'>ONE TAP FOR IMMEDIATE SAFETY</h3>
+                <p className='text-md mb-[14.4px]'>Quickly summon help with a single tap. Provide additional info to ensure rapid response to your exact location.</p>
+              </div>
+              <img className='w-[250px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/iPhone-14-Pro-Max-1.png" alt="TRUalert Location Phone" />
+            </div>
+            <div className='flex flex-col items-center gap-5'>
+              <div className='flex flex-col gap-5 text-center p-5'>
+                <h3 className='text-3xl font-bold'>TRACK YOUR SAFETY HISTORY</h3>
+                <p className='text-md mb-[14.4px]'>Easily view your emergency activity log, including button presses, locations, and response times, for complete peace of mind.</p>
+              </div>
+              <img className='w-[250px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/iPhone-14-Pro-Max-3.png" alt="TRUalert Account History Phone" />
+            </div>
+          </div>
         </section>
 
         <section>
@@ -165,7 +195,7 @@ function page() {
           </div>
         </section>
       </div>
-      <Footer /> */}
+      <Footer />
     </>
   )
 }
