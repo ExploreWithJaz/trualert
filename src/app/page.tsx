@@ -11,6 +11,16 @@ function page() {
   return (
     <>
       <Navigation />
+      <div
+  className="fixed inset-0 w-full h-full min-h-screen z-[-1] bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/map.png')",
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    filter: 'invert(1) brightness(0.8) contrast(1.1) saturate(0.7) hue-rotate(180deg)',
+  }}
+></div>
       <div className='mt-20 px-2'>
         <section className='flex flex-col items-center max-w-[850px] mx-auto py-2.5 gap-5 text-center'>
           <div className='text-[80px]/21 font-bold w-full'>
