@@ -75,7 +75,7 @@ const ScrollEffect: React.FC = () => {
   return (
     <div className="relative w-full" ref={containerRef}>
     {/* Sticky Phone Container - Will stay centered */}
-    <div className="sticky top-0 left-0 right-0 bottom-0 h-screen px-20">
+    <div className="sticky top-0 left-0 right-0 bottom-0 h-screen px-20 mt-[-60px]">
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-[600px] flex items-center justify-center">
         <img
           src={sections[activeIndex]?.image}

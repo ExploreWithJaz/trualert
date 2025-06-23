@@ -10,7 +10,7 @@ function footer() {
   });
 
   return (
-    <div className='px-20'>
+    <div className='relative px-20 z-1'>
         <div className='mx-[232.5px] pb-20'>
             <div className='px-10 py-8 bg-[#292929] rounded-[10px]'>
                 <div className='flex flex-row justify-between items-center'>
