@@ -20,17 +20,17 @@ function page() {
     <>
       <Navigation />
       <div
-  className="fixed inset-0 w-full h-full min-h-screen z-[-1] bg-cover bg-center"
-  style={{
-    backgroundImage: "url('/map.png')",
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    filter: 'invert(100%) brightness(10.18) contrast(1.5) saturate(0.6) hue-rotate(180deg) invert(100%) brightness(0.1)',
-  }}
-></div>
+        className="fixed inset-0 w-full h-full min-h-screen z-[-1] bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/map.png')",
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          filter: 'invert(100%) brightness(10.18) contrast(1.5) saturate(0.6) hue-rotate(180deg) blur(1px) invert(100%) brightness(0.1)',
+        }}
+      ></div>
 
-      <div className='mt-20 px-2'>
+      {/* <div className='mt-20 px-2'>
         <section className='flex flex-col items-center max-w-[850px] mx-auto py-2.5 gap-5 text-center'>
           <div className='text-[80px]/21 font-bold w-full'>
             <h1>
@@ -165,7 +165,7 @@ function page() {
           </div>
         </section>
       </div>
-      <Footer />
+      <Footer /> */}
     </>
   )
 }
