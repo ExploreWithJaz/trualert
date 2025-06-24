@@ -28,10 +28,10 @@ function page() {
           backgroundSize: 'cover',
           filter: 'invert(100%) brightness(10.18) contrast(1.5) saturate(0.6) hue-rotate(180deg) invert(100%) brightness(0.1)',
           // Only for mobile: make sure it stays behind and covers
-    minHeight: '100vh',
-    width: '100vw',
-    left: 0,
-    top: 0,
+          minHeight: '100vh',
+          width: '100vw',
+          left: 0,
+          top: 0,
         }}
       ></div>
 
