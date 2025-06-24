@@ -164,7 +164,7 @@ function page() {
         </section>
 
         <section>
-          <div className='px-20 m-0'>
+          <div className='hidden sm:flex px-20 m-0'>
             <div className='flex flex-row items-end justify-center py-10 mx-[232.5px] gap-[79px]'>
               <img className='h-[625.52px] w-[625.52px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Phone Screen Login" data-aos="fade-up" />
               <div className='flex flex-col  gap-10 text-left h-full w-[575.48px] tracking-wider' data-aos="fade-up" data-aos-delay="200">
@@ -193,9 +193,31 @@ function page() {
               </div>
             </div>
           </div>
+
+          <div>
+            <div className='flex flex-col gap-[47px]'>
+              <div className='flex flex-col justify-center items-start gap-5'>
+                <p className='text-[#FF0F0F] text-3xl font-semibold mb-[14.4px]'>EVOLVING FOR A</p>
+                <h2 className='text-[#FFF8F8] text-[47px]/13 font-bold'>SAFER, SMARTER FUTURE & BEYOND</h2>
+                <div className='flex flex-wrap gap-5'>
+                  <img src="/App-Store.png" alt="Appstore Button" />
+                  <img src="/Google-Play.png" alt="Google Play Button" />
+                </div>
+              </div>
+              <div className='flex flex-col items-center'>
+                <img className='w-[260px] h-[260px] w-max-[640px] h-max-[640px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Login Screen" />
+                <ul className='flex flex-wrap gap-5 text-sm mt-17.5 p-5'>
+                  <li><a href="">Privacy & Security</a></li>
+                  <li><a className='text-[#FF0F0F] hover:text-[#FFFFFF] transition duration-300 ease-in-out' href="">Terms</a></li>
+                  <li><a href="">Pricing</a></li>
+                  <li>© 2025 TRUalert</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
