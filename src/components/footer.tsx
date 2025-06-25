@@ -10,28 +10,29 @@ function footer() {
   });
 
   return (
-    <div className='relative px-20 z-1'>
-        <div className='mx-[232.5px] pb-20'>
-            <div className='px-10 py-8 bg-[#292929] rounded-[10px]'>
-                <div className='flex flex-row justify-between items-center'>
+    <div className='relative px-2.5 xl:px-20 z-1'>
+        <div className=' xl:mx-[232.5px] pb-20'>
+            <div className='p-5 xl:px-10 xl:py-8 bg-[#292929] rounded-[10px]'>
+                
+                <div className='flex flex-row flex-wrap justify-between items-center gap-5'>
                     <div className='flex flex-row items-center gap-2.5'>
                         <img className='w-12 h-auto' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="TRUalert Logo" />
                         <img className='w-32.5' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="TRUalert Logo Text" />
                     </div>
-                    <div className='flex flex-row justify-center items-center gap-5'>
+                    <div className='flex flex-row flex-wrap xl:justify-center items-center gap-5'>
                         <a href="https://apps.apple.com/us/app/trualert/id6503326659">
-                            <img className='w-auto h-[35.3px]' src="/App-Store.png" alt="App Store Button" />
+                            <img className='w-auto h-[47px] xl:h-[35.3px]' src="/App-Store.png" alt="App Store Button" />
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=com.pixeloha.trualert">
-                            <img className='w-auto h-[35.3px]' src="/Google-Play.png" alt="Google Play Button" />
+                            <img className='w-auto h-[47px] xl:h-[35.3px]' src="/Google-Play.png" alt="Google Play Button" />
                         </a>
                     </div>
                 </div>
                 
                 <div className='border-b border-b-[#525252] border-solid my-5'></div>
                 
-                <div className='flex flex-row gap-5'>
-                    <div className='flex flex-col justify-between items-start w-max-full h-max-full w-[384px] h-[300px] text-sm'>
+                <div className='flex flex-row flex-wrap gap-5'>
+                    <div className='flex flex-col justify-between items-startw-full h-full max-w-[384px] max-h-[300px] text-sm'>
                         <div>
                             <p className='mb-[14.4px]'>Address</p>
                             <p className='text-[#9c9c9c]'>Orange County, CA</p>
@@ -39,7 +40,7 @@ function footer() {
                         <p className='text-xs text-[#6d6d6d] font-bold'>@ 2025 TRUalert</p>
                     </div>
 
-                    <div className='flex flex-col justify-between items-start w-max-full h-max-full w-[384px] h-[300px] text-sm'>
+                    <div className='flex flex-col justify-between items-start w-full h-full max-w-[384px] max-h-[300px] text-sm'>
                         <div>
                             <div>
                                 <p className='mb-[14.4px]'>Pages</p>
@@ -57,7 +58,7 @@ function footer() {
                         </div>
                     </div>
 
-                    <div className='flex flex-row justify-between items-start w-max-full h-max-full w-[384px] h-[300px] gap-5 text-sm'>
+                    <div className='flex flex-row flex-wrap justify-between items-start w-full h-full max-w-[384px] max-h-[300px] gap-5 text-sm'>
                         <div>
                             <div>
                                 <p className='mb-[14.4px]'>Contact Us</p>

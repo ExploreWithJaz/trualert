@@ -225,7 +225,7 @@ function page() {
           </div>
         </section>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
