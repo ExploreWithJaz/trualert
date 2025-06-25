@@ -173,8 +173,8 @@ function page() {
 
         <section>
           <div className='hidden xl:block px-20 m-0'>
-            <div className='flex flex-row items-end justify-center py-10 mx-[232.5px] gap-[79px]'>
-              <img className='h-[625.52px] w-[625.52px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Phone Screen Login" data-aos="fade-up" />
+            <div className='flex flex-row items-end justify-center py-10 gap-[79px]'>
+              <img className='w-full max-w-[625.52px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Phone Screen Login" data-aos="fade-up" />
               <div className='flex flex-col  gap-10 text-left h-full w-[575.48px] tracking-wider' data-aos="fade-up" data-aos-delay="200">
                 <div className='flex flex-col gap-5'>
                   <p className='text-[32px] text-[#FF0F0F] font-semibold mb-[14.4px]'>EVOLVING FOR A</p>
