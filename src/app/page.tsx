@@ -202,18 +202,18 @@ function page() {
             </div>
           </div>
 
-          <div className='block xl:hidden px-5 m-0'>
-            <div className='flex flex-col gap-[47px]'>
-              <div className='flex flex-col justify-center items-start gap-5'>
-                <p className='text-[#FF0F0F] text-3xl font-semibold mb-[14.4px]'>EVOLVING FOR A</p>
-                <h2 className='text-[#FFF8F8] text-[47px]/13 font-bold'>SAFER, SMARTER FUTURE & BEYOND</h2>
+          <div className='block xl:hidden px-5 sm:mx-10 md:px-10 md:mx-0 lg:px-10 lg:mx-18 m-0'>
+            <div className='flex flex-col gap-[47px] py-5'>
+              <div className='flex flex-col justify-center gap-5'>
+                <p className='text-[#FF0F0F] text-3xl font-semibold mb-[14.4px] md:text-center'>EVOLVING FOR A</p>
+                <h2 className='text-[#FFF8F8] text-[47px]/13 md:text-6xl font-bold'>SAFER, SMARTER FUTURE & BEYOND</h2>
                 <div className='flex flex-wrap gap-5'>
                   <img src="/App-Store.png" alt="Appstore Button" />
                   <img src="/Google-Play.png" alt="Google Play Button" />
                 </div>
               </div>
               <div className='flex flex-col items-center'>
-                <img className='w-full max-w-[640px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Login Screen" />
+                <img className='w-full max-w-[640px] h-auto p-2.5' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Login Screen" />
                 <ul className='flex flex-wrap gap-5 text-sm mt-17.5 p-5'>
                   <li><a href="">Privacy & Security</a></li>
                   <li><a className='text-[#FF0F0F] hover:text-[#FFFFFF] transition duration-300 ease-in-out' href="">Terms</a></li>
