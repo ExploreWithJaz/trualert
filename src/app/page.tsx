@@ -27,11 +27,16 @@ function page() {
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           filter: 'invert(100%) brightness(10.18) contrast(1.5) saturate(0.6) hue-rotate(180deg) invert(100%) brightness(0.1)',
+          // Only for mobile: make sure it stays behind and covers
+          minHeight: '100vh',
+          width: '100vw',
+          left: 0,
+          top: 0,
         }}
       ></div>
 
       <div>
-        <section className='flex flex-col items-center max-w-[850px] mx-auto gap-5 text-center sm:mt-15 sm:mx-8 sm:px-5 md:mt-20 md:mx-23 md:p-10 lg:mt-20 lg:mx-56 lg:p-10'>
+        <section className='flex flex-col items-center max-w-[850px] mx-auto gap-5 text-center mt-15 px-5 sm:mt-15 sm:mx-8 sm:px-5 md:mt-20 md:mx-23 md:p-10 lg:mt-20 lg:mx-56 lg:p-10'>
           <div className='text-[47px]/13 md:text-[60px]/13 xl:text-[80px]/21 font-bold w-full'>
             <h1>
               EMERGENCY AID, JUST A <span className='text-[#ff0f0f]'>TAP AWAY</span>
@@ -56,18 +61,18 @@ function page() {
           </div>
         </section>
 
-        <section className="w-full" data-aos="fade-up">
+        <section className="w-full overflow-x-hidden" data-aos="fade-up">
           <div className='mt-[45px] px-2.5'>
             <div className='flex justify-center w-full py-2.5'>
               <div className="w-[1280px] h-[619px] flex justify-center items-center">
-                <div className="relative w-[300px] h-auto mx-auto">
+                <div className="relative w-[300px] flex justify-center h-auto mx-auto">
                   <div className="absolute inset-0 z-0 flex justify-center items-center">
                     <PulseEffect />
                   </div>
                   <img
                     src="https://trualert.com/wp-content/uploads/2025/05/homepage.png"
                     alt="Phone"
-                    className="relative z-10 w-full h-auto"
+                    className="relative z-10 w-[280px] sm:w-full h-auto"
                   />
                 </div>
               </div>
@@ -118,14 +123,16 @@ function page() {
           </div>
         </section> */}
 
-        <section className='px-10 sm:px-20 sm:m-0' data-aos="fade-up">
-          <div className='flex flex-col gap-5 py-20 mx-0 lg:py-30 lg:mx-[232.5px]'>
-            <div className='flex flex-col items-center justify-center text-center '>
-              <h2 className='text-5xl xl:text-[80px]/22 font-bold'>STAY SAFE ANYTIME, ANYWHERE WITH</h2>
+        <section className="px-4 sm:px-6 md:px-10 xl:px-20 m-0" data-aos="fade-up">
+          <div className="flex flex-col gap-5 py-10 md:py-16 xl:py-30 mx-0 lg:mx-auto max-w-5xl">
+            <div className="flex flex-col items-center justify-center text-center">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl xl:text-[80px] font-bold leading-tight">
+                STAY SAFE ANYTIME, ANYWHERE WITH
+              </h2>
             </div>
-            <div className='flex justify-center items-center p-0 sm:p-2.5'>
+            <div className="flex justify-center items-center p-0 md:p-2.5">
               <img
-                className="w-[240px] h-[100px] sm:w-[390px] sm:h-[200px] md:w-[390px] md:h-[200px] flex-shrink-0"
+                className="w-full max-w-[390px] h-auto"
                 src="/Logo-Horizontal-Dark-mode.svg"
                 alt="TRUalert Darkmode Logo"
               />
@@ -162,8 +169,8 @@ function page() {
           </div>
         </section>
 
-        {/* <section>
-          <div className='hidden lg:flex px-20 m-0'>
+        <section>
+          <div className='hidden xl:block px-20 m-0'>
             <div className='flex flex-row items-end justify-center py-10 mx-[232.5px] gap-[79px]'>
               <img className='h-[625.52px] w-[625.52px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Phone Screen Login" data-aos="fade-up" />
               <div className='flex flex-col  gap-10 text-left h-full w-[575.48px] tracking-wider' data-aos="fade-up" data-aos-delay="200">
@@ -193,7 +200,7 @@ function page() {
             </div>
           </div>
 
-          <div className='flex lg:hidden px-5 m-0'>
+          <div className='block xl:hidden px-5 m-0'>
             <div className='flex flex-col gap-[47px]'>
               <div className='flex flex-col justify-center items-start gap-5'>
                 <p className='text-[#FF0F0F] text-3xl font-semibold mb-[14.4px]'>EVOLVING FOR A</p>
@@ -204,7 +211,7 @@ function page() {
                 </div>
               </div>
               <div className='flex flex-col items-center'>
-                <img className='min-w-[260px] min-h-[260px] max-w-[640px] max-h-[640px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Login Screen" />
+                <img className='w-full max-w-[640px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Login Screen" />
                 <ul className='flex flex-wrap gap-5 text-sm mt-17.5 p-5'>
                   <li><a href="">Privacy & Security</a></li>
                   <li><a className='text-[#FF0F0F] hover:text-[#FFFFFF] transition duration-300 ease-in-out' href="">Terms</a></li>
@@ -214,7 +221,7 @@ function page() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
       </div>
       {/* <Footer /> */}
     </>
