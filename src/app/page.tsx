@@ -30,19 +30,19 @@ function page() {
         }}
       ></div>
 
-      {/* <div className='mt-20 px-2'>
+      <div className='mt-20 px-2'>
         <section className='flex flex-col items-center max-w-[850px] mx-auto py-2.5 gap-5 text-center'>
-          <div className='text-[80px]/21 font-bold w-full'>
+          <div className='text-[47px]/13 sm:text-[80px]/21 font-bold w-full'>
             <h1>
               EMERGENCY AID, JUST A <span className='text-[#ff0f0f]'>TAP AWAY</span>
             </h1>
           </div>
-          <div className='w-[588.8px] h-auto mb-3.5 '>
-            <p className='text-white text-lg text-center leading-7 tracking-wider'>
+          <div className='w-max-[588.8px] h-auto mb-3.5 '>
+            <p className='text-white text-md sm:text-lg text-center leading-7 sm:tracking-wider'>
               Experience peace of mind knowing help is just a tap away. TRUalert instantly connects you to professional emergency dispatchers via Noonlight—no tracking, no delays, just real help when you need it most.
             </p>
           </div>
-          <div className='flex justify-center items-center w-full gap-4 mx-15 p-2.5'>
+          <div className='flex flex-wrap justify-center items-center w-full gap-4 mx-15 p-2.5'>
             <a href="https://apps.apple.com/us/app/trualert/id6503326659">
               <img className='w-[161px] h-[47px]' src="/App-Store.png" alt="App Store Download Button" />
             </a>
@@ -75,7 +75,7 @@ function page() {
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <div className='my-35 px-20'>
             <div className='flex flex-row max-w-7xl justify-center items-center gap-15 text-center py-[27px] mx-[232.5px]'>
               <img
@@ -116,25 +116,54 @@ function page() {
               />
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className='px-20 m-0' data-aos="fade-up">
-          <div className='flex flex-col gap-5 py-30 mx-[232.5px]'>
+        <section className='px-10 sm:px-20 sm:m-0' data-aos="fade-up">
+          <div className='flex flex-col gap-5 py-20 mx-0 lg:py-30 lg:mx-[232.5px]'>
             <div className='flex flex-col items-center justify-center text-center '>
-              <h2 className='text-[80px]/22 font-bold'>STAY SAFE ANYTIME, ANYWHERE WITH</h2>
+              <h2 className='text-5xl sm:text-[80px]/22 font-bold'>STAY SAFE ANYTIME, ANYWHERE WITH</h2>
             </div>
-            <div className='flex justify-center items-center p-2.5'>
-              <img className='w-[390px] h-[200px]' src="/Logo-Horizontal-Dark-mode.svg" alt="TRUalert Darkmode Logo" />
+            <div className='flex justify-center items-center p-0 sm:p-2.5'>
+              <img
+                className="w-[240px] h-[100px] sm:w-[390px] sm:h-[200px] md:w-[390px] md:h-[200px] flex-shrink-0"
+                src="/Logo-Horizontal-Dark-mode.svg"
+                alt="TRUalert Darkmode Logo"
+              />
             </div>
           </div>
         </section>
 
         <section data-aos="fade-up">
-          <ScrollEffect />
+          <div className='hidden lg:block'>
+            <ScrollEffect />
+          </div>
+          <div className='flex lg:hidden flex-col justify-between items-center gap-25  pb-25'>
+            <div className='flex flex-col items-center gap-5'>
+              <div className='flex flex-col gap-5 text-center p-5'>
+                <h3 className='text-3xl font-bold'>AFFORDABLE SUBSCRIPTION</h3>
+                <p className='text-md mb-[14.4px]'>Choose the subscription plan that perfectly fits your needs and preferences.</p>
+              </div>
+              <img className='w-[250px] h-auto' src="https://trualert.com/wp-content/uploads/2025/05/Group-39265-1.png" alt="TRUalert Pricing Phone" />
+            </div>
+            <div className='flex flex-col items-center gap-5'>
+              <div className='flex flex-col gap-5 text-center p-5'>
+                <h3 className='text-3xl font-bold'>ONE TAP FOR IMMEDIATE SAFETY</h3>
+                <p className='text-md mb-[14.4px]'>Quickly summon help with a single tap. Provide additional info to ensure rapid response to your exact location.</p>
+              </div>
+              <img className='w-[250px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/iPhone-14-Pro-Max-1.png" alt="TRUalert Location Phone" />
+            </div>
+            <div className='flex flex-col items-center gap-5'>
+              <div className='flex flex-col gap-5 text-center p-5'>
+                <h3 className='text-3xl font-bold'>TRACK YOUR SAFETY HISTORY</h3>
+                <p className='text-md mb-[14.4px]'>Easily view your emergency activity log, including button presses, locations, and response times, for complete peace of mind.</p>
+              </div>
+              <img className='w-[250px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/iPhone-14-Pro-Max-3.png" alt="TRUalert Account History Phone" />
+            </div>
+          </div>
         </section>
 
         <section>
-          <div className='hidden sm:flex px-20 m-0'>
+          <div className='hidden lg:flex px-20 m-0'>
             <div className='flex flex-row items-end justify-center py-10 mx-[232.5px] gap-[79px]'>
               <img className='h-[625.52px] w-[625.52px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Phone Screen Login" data-aos="fade-up" />
               <div className='flex flex-col  gap-10 text-left h-full w-[575.48px] tracking-wider' data-aos="fade-up" data-aos-delay="200">
@@ -164,7 +193,7 @@ function page() {
             </div>
           </div>
 
-          <div>
+          <div className='flex lg:hidden px-5 m-0'>
             <div className='flex flex-col gap-[47px]'>
               <div className='flex flex-col justify-center items-start gap-5'>
                 <p className='text-[#FF0F0F] text-3xl font-semibold mb-[14.4px]'>EVOLVING FOR A</p>
@@ -187,7 +216,7 @@ function page() {
           </div>
         </section>
       </div>
-      <Footer /> */}
+      {/* <Footer /> */}
     </>
   )
 }

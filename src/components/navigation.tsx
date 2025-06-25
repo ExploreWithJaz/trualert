@@ -5,8 +5,8 @@ function navigation() {
 
   return (
     <div>
-      <div className='mx-20 w-auto font-sans font-medium'>
-        <section className='hidden sm:flex justify-between items-center mx-60 py-8'>
+      <div className='hidden lg:flex items-center mx-20 w-auto font-sans font-medium'>
+        <section className='flex justify-between items-center mx-60 py-8'>
           <div className='flex items-center gap-2'>
             <img className='w-12' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
             <img className='w-32 h-auto' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="Trualert Text" />
@@ -28,7 +28,7 @@ function navigation() {
         </section>
       </div>
 
-      <div className='flex sm:hidden px-5 relative'>
+      <div className='flex lg:hidden w-full px-5 relative'>
         <section className='flex flex-row justify-between items-center py-7.5 w-full'>
           <div className='flex items-center gap-1.5'>
             <img className='w-[34px] h-auto' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
