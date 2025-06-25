@@ -123,10 +123,10 @@ function page() {
           </div>
         </section> */}
 
-        <section className="px-4 sm:px-6 md:px-10 xl:px-20 m-0" data-aos="fade-up">
-          <div className="flex flex-col gap-5 py-10 md:py-16 xl:py-30 mx-0 lg:mx-auto max-w-5xl">
+        <section className="px-10 md:px-10 md:mx-11.5 lg:mx-44 xl:px-0 m-0" data-aos="fade-up">
+          <div className="flex flex-col gap-5 py-25 mx-0 max-w-5xl">
             <div className="flex flex-col items-center justify-center text-center">
-              <h2 className="text-2xl sm:text-4xl md:text-5xl xl:text-[80px] font-bold leading-tight">
+              <h2 className="text-5xl md:text-6xl xl:text-[80px] font-bold leading-tight">
                 STAY SAFE ANYTIME, ANYWHERE WITH
               </h2>
             </div>
@@ -141,10 +141,12 @@ function page() {
         </section>
 
         <section data-aos="fade-up">
-          <div className='hidden lg:block'>
+          {/* Desktop View @ 1280px and above */}
+          <div className='hidden xl:block'>
             <ScrollEffect />
           </div>
-          <div className='flex lg:hidden flex-col justify-between items-center gap-25  pb-25'>
+          {/* Mobile View @ 1280px and below */}
+          <div className='flex xl:hidden flex-col justify-between items-center gap-25  pb-25'>
             <div className='flex flex-col items-center gap-5'>
               <div className='flex flex-col gap-5 text-center p-5'>
                 <h3 className='text-3xl font-bold'>AFFORDABLE SUBSCRIPTION</h3>
