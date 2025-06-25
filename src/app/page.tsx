@@ -26,23 +26,23 @@ function page() {
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
-          filter: 'invert(100%) brightness(10.18) contrast(1.5) saturate(0.6) hue-rotate(180deg) blur(1px) invert(100%) brightness(0.1)',
+          filter: 'invert(100%) brightness(10.18) contrast(1.5) saturate(0.6) hue-rotate(180deg) invert(100%) brightness(0.1)',
         }}
       ></div>
 
-      <div className='mt-20 px-2'>
-        <section className='flex flex-col items-center max-w-[850px] mx-auto py-2.5 gap-5 text-center'>
-          <div className='text-[47px]/13 sm:text-[80px]/21 font-bold w-full'>
+      <div>
+        <section className='flex flex-col items-center max-w-[850px] mx-auto gap-5 text-center sm:mt-15 sm:mx-8 sm:px-5 md:mt-20 md:mx-23 md:p-10 lg:mt-20 lg:mx-56 lg:p-10'>
+          <div className='text-[47px]/13 md:text-[60px]/13 xl:text-[80px]/21 font-bold w-full'>
             <h1>
               EMERGENCY AID, JUST A <span className='text-[#ff0f0f]'>TAP AWAY</span>
             </h1>
           </div>
           <div className='w-max-[588.8px] h-auto mb-3.5 '>
-            <p className='text-white text-md sm:text-lg text-center leading-7 sm:tracking-wider'>
+            <p className='text-white text-md xl:text-lg text-center leading-7 tracking-normal xl:tracking-wider sm:mb-[14.4px]'>
               Experience peace of mind knowing help is just a tap away. TRUalert instantly connects you to professional emergency dispatchers via Noonlight—no tracking, no delays, just real help when you need it most.
             </p>
           </div>
-          <div className='flex flex-wrap justify-center items-center w-full gap-4 mx-15 p-2.5'>
+          <div className='flex flex-wrap justify-center items-center w-full gap-4 md:py-10 xl:mx-15 xl:p-2.5 '>
             <a href="https://apps.apple.com/us/app/trualert/id6503326659">
               <img className='w-[161px] h-[47px]' src="/App-Store.png" alt="App Store Download Button" />
             </a>
@@ -121,7 +121,7 @@ function page() {
         <section className='px-10 sm:px-20 sm:m-0' data-aos="fade-up">
           <div className='flex flex-col gap-5 py-20 mx-0 lg:py-30 lg:mx-[232.5px]'>
             <div className='flex flex-col items-center justify-center text-center '>
-              <h2 className='text-5xl sm:text-[80px]/22 font-bold'>STAY SAFE ANYTIME, ANYWHERE WITH</h2>
+              <h2 className='text-5xl xl:text-[80px]/22 font-bold'>STAY SAFE ANYTIME, ANYWHERE WITH</h2>
             </div>
             <div className='flex justify-center items-center p-0 sm:p-2.5'>
               <img
@@ -162,7 +162,7 @@ function page() {
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <div className='hidden lg:flex px-20 m-0'>
             <div className='flex flex-row items-end justify-center py-10 mx-[232.5px] gap-[79px]'>
               <img className='h-[625.52px] w-[625.52px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Phone Screen Login" data-aos="fade-up" />
@@ -204,7 +204,7 @@ function page() {
                 </div>
               </div>
               <div className='flex flex-col items-center'>
-                <img className='w-[260px] h-[260px] w-max-[640px] h-max-[640px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Login Screen" />
+                <img className='min-w-[260px] min-h-[260px] max-w-[640px] max-h-[640px]' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Login Screen" />
                 <ul className='flex flex-wrap gap-5 text-sm mt-17.5 p-5'>
                   <li><a href="">Privacy & Security</a></li>
                   <li><a className='text-[#FF0F0F] hover:text-[#FFFFFF] transition duration-300 ease-in-out' href="">Terms</a></li>
@@ -214,7 +214,7 @@ function page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
       {/* <Footer /> */}
     </>
