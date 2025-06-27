@@ -80,48 +80,55 @@ function page() {
           </div>
         </section>
 
-        {/* <section>
-          <div className='my-35 px-20'>
-            <div className='flex flex-row max-w-7xl justify-center items-center gap-15 text-center py-[27px] mx-[232.5px]'>
-              <img
-                className="w-[640px] h-[640px] object-cover object-center rounded-[60px]"
-                src="/people.png"
-                alt="People Talking"
-                data-aos="fade-up"
-              />
-              <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px] tracking-wider" data-aos="fade-up" data-aos-delay="200">
-                <p className='text-lg text-[#FF0F0F]'>UNIFIED PROTECTION</p>
-                <h2 className='text-5xl/16 font-bold'>BUILDING SAFER COMMUNITIES</h2>
-                <p className='text-lg'>
-                  TRUalert is committed to keeping your campus safe and secure.
-                  Our dedicated security team works around the clock to ensure students feel protected,
-                  allowing you to focus on your studies, make the most of your college experience,
-                  and thrive in a safe environment.
-                </p>
+        <section>
+          {/* Viewport 320px - 768px */}
+          <div className='block md:hidden'>
+            <div className='flex flex-col items-center gap-5 px-5 my-25 sm:mx-10 sm:py-25 md:px-5 transition-all duration-300 ease-in-out'>
+              <div className='flex flex-col gap-5 text-left'>
+                <p className='text-sm text-[#FF0F0F]'>UNIFIED PROTECTION</p>
+                <h3 className='text-4xl font-bold'>BUILDING SAFER COMMUNITIES</h3>
+                <p className='text-md mb-[14.4px]'>TRUalert is committed to keeping your campus safe and secure. Our dedicated security team works around the clock to ensure students feel protected, allowing you to focus on your studies, make the most of your college experience, and thrive in a safe environment.</p>
               </div>
+              <img className='w-full h-auto rounded-[30px] sm:rounded-[60px]' src="/people.png" alt="TRUalert People Talking" />
+            </div>
+
+            <div className='flex flex-col items-center gap-5 px-4 sm:mx-10 sm:px-5 transition-all duration-300 ease-in-out'>
+              <div className='flex flex-col gap-5 text-left'>
+                <p className='text-sm text-[#FF0F0F]'>ALWAYS READY, ALWAYS RELIABLE</p>
+                <h3 className='text-[40px]/12 font-bold'>TRUSTED EMERGENCY HELP, JUST A TAP AWAY</h3>
+                <p className='text-md mb-[14.4px] tracking-wide'>With TRUalert, you're never alone. One tap connects you to Noonlight's professional dispatchers, who coordinate emergency response via SMS and calls—quick, discreet, and always ready when it matters most.</p>
+              </div>
+              <img className='w-full h-auto' src="/security.png" alt="TRUalert Security Talking in the Radio" />
             </div>
           </div>
 
-          <div className='px-20 m-0'>
-            <div className='flex flex-row max-w-7xl justify-center items-center gap-15 p-0 mx-[232.5px]'>
-              <div className="flex flex-col items-start gap-5 text-left h-full w-[537.59px] tracking-wider" data-aos="fade-up" data-aos-delay="200">
-                <p className='text-lg text-[#FF0F0F]'>ALWAYS READY, ALWAYS RELIABLE</p>
-                <h2 className='text-5xl/16 font-bold'>TRUSTED<br /> EMERGENCY HELP,<br /> JUST A TAP AWAY</h2>
-                <p className='text-lg'>
-                  With TRUalert, you're never alone. One tap connects you to Noonlight's professional dispatchers,
-                  who coordinate emergency response via SMS and calls—quick, discreet,
-                  and always ready when it matters most.
-                </p>
+          {/* Viewport 768px and above */}
+          <div className='hidden md:block'>
+            <div className='px-10 my-25 xl:px-20 xl:my-35'>
+              <div className='flex flex-row justify-between items-center gap-10 py-5 transition-all duration-300 ease-in-out'>
+                <img className='w-[45%] h-auto rounded-[30px] sm:rounded-[calc(100% - 60px)]' src="/people.png" alt="TRUalert People Talking" />
+                <div className='flex flex-col gap-5'>
+                  <p className='text-md xl:text-lg text-[#FF0F0F]'>UNIFIED PROTECTION</p>
+                  <h3 className='text-4xl xl:text-5xl font-bold'>BUILDING SAFER COMMUNITIES</h3>
+                  <p className='text-md xl:text-lg mb-[14.4px] tracking-wide'>TRUalert is committed to keeping your campus safe and secure. Our dedicated security team works around the clock to ensure students feel protected, allowing you to focus on your studies, make the most of your college experience, and thrive in a safe environment.</p>
+                </div>
               </div>
-              <img
-                className="w-[640px] h-[640px] object-cover object-center rounded-[60px]"
-                src="/people.png"
-                alt="People Talking"
-                data-aos="fade-up"
-              />
+            </div>
+
+            <div>
+              <div className='px-10 xl:px-20'>
+                <div className='flex flex-row justify-between items-center gap-10 transition-all duration-300 ease-in-out'>
+                  <div className='flex flex-col gap-5'>
+                    <p className='text-md xl:text-lg text-[#FF0F0F]'>ALWAYS READY, ALWAYS RELIABLE</p>
+                    <h3 className='text-4xl xl:5xl font-bold'>TRUSTED EMERGENCY HELP, JUST A TAP AWAY</h3>
+                    <p className='text-md xl:text-lg mb-[14.4px] tracking-wide'>With TRUalert, you're never alone. One tap connects you to Noonlight's professional dispatchers, who coordinate emergency response via SMS and calls—quick, discreet, and always ready when it matters most.</p>
+                  </div>
+                  <img className='w-[50%] h-auto' src="/security.png" alt="TRUalert Security Talking in the Radio" />
+                </div>
+              </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         <section className="w-full" data-aos="fade-up">
           <div className="flex flex-col gap-5 py-25 mx-auto max-w-5xl px-10 xl:px-0">
