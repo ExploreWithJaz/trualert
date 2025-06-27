@@ -84,21 +84,21 @@ function page() {
           {/* Viewport 320px - 768px */}
           <div className='block md:hidden'>
             <div className='flex flex-col items-center gap-5 px-5 my-25 sm:mx-10 sm:py-25 md:px-5 transition-all duration-300 ease-in-out'>
-              <div className='flex flex-col gap-5 text-left'>
+              <div className='flex flex-col gap-5 text-left' data-aos="fade-up">
                 <p className='text-sm text-[#FF0F0F]'>UNIFIED PROTECTION</p>
                 <h3 className='text-4xl font-bold'>BUILDING SAFER COMMUNITIES</h3>
                 <p className='text-md mb-[14.4px]'>TRUalert is committed to keeping your campus safe and secure. Our dedicated security team works around the clock to ensure students feel protected, allowing you to focus on your studies, make the most of your college experience, and thrive in a safe environment.</p>
               </div>
-              <img className='w-full h-auto rounded-[30px] sm:rounded-[60px]' src="/people.png" alt="TRUalert People Talking" />
+              <img className='w-full h-auto rounded-[30px] sm:rounded-[60px]' src="/people.png" alt="TRUalert People Talking" data-aos="fade-up"/>
             </div>
 
             <div className='flex flex-col items-center gap-5 px-4 sm:mx-10 sm:px-5 transition-all duration-300 ease-in-out'>
-              <div className='flex flex-col gap-5 text-left'>
+              <div className='flex flex-col gap-5 text-left' data-aos="fade-up">
                 <p className='text-sm text-[#FF0F0F]'>ALWAYS READY, ALWAYS RELIABLE</p>
                 <h3 className='text-[40px]/12 font-bold'>TRUSTED EMERGENCY HELP, JUST A TAP AWAY</h3>
                 <p className='text-md mb-[14.4px] tracking-wide'>With TRUalert, you're never alone. One tap connects you to Noonlight's professional dispatchers, who coordinate emergency response via SMS and calls—quick, discreet, and always ready when it matters most.</p>
               </div>
-              <img className='w-full h-auto' src="/security.png" alt="TRUalert Security Talking in the Radio" />
+              <img className='w-full h-auto' src="/security.png" alt="TRUalert Security Talking in the Radio" data-aos="fade-up"/>
             </div>
           </div>
 
@@ -147,13 +147,13 @@ function page() {
           </div>
         </section>
 
-        <section data-aos="fade-up">
+        <section>
           {/* Desktop View @ 1280px and above */}
-          <div className='hidden xl:block'>
+          <div className='hidden lg:block' data-aos="fade-up">
             <ScrollEffect />
           </div>
           {/* Mobile View @ 1280px and below */}
-          <div className='flex xl:hidden flex-col justify-between items-center gap-25  pb-25'>
+          <div className='flex lg:hidden flex-col justify-between items-center gap-25 pb-25 md:px-10 md:mx-32 lg:mx-64'>
             <div className='flex flex-col items-center gap-5'>
               <div className='flex flex-col gap-5 text-center p-5'>
                 <h3 className='text-3xl font-bold'>AFFORDABLE SUBSCRIPTION</h3>
@@ -179,6 +179,7 @@ function page() {
         </section>
 
         <section>
+          {/* Desktop View @ 1280px and above */}
           <div className='hidden xl:block px-20 m-0'>
             <div className='flex flex-row items-end justify-center py-10 gap-[79px]'>
               <img className='w-full max-w-[625.52px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Phone Screen Login" data-aos="fade-up" />
@@ -209,9 +210,10 @@ function page() {
             </div>
           </div>
 
+          {/* Mobile View @ 1280px and below */}
           <div className='block xl:hidden px-5 sm:mx-10 md:px-10 md:mx-0 lg:px-10 lg:mx-18 m-0'>
             <div className='flex flex-col gap-[47px] py-5'>
-              <div className='flex flex-col justify-center gap-5'>
+              <div className='flex flex-col justify-center gap-5' data-aos="fade-up">
                 <p className='text-[#FF0F0F] text-3xl font-semibold mb-[14.4px] md:text-center'>EVOLVING FOR A</p>
                 <h2 className='text-[#FFF8F8] text-[47px]/13 md:text-6xl font-bold'>SAFER, SMARTER FUTURE & BEYOND</h2>
                 <div className='flex flex-wrap gap-5'>
@@ -219,7 +221,7 @@ function page() {
                   <img src="/Google-Play.png" alt="Google Play Button" />
                 </div>
               </div>
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col items-center' data-aos="fade-up" data-aos-delay="200">
                 <img className='w-full max-w-[640px] h-auto p-2.5' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Login Screen" />
                 <ul className='flex flex-wrap gap-5 text-sm mt-17.5 p-5'>
                   <li><a href="">Privacy & Security</a></li>
