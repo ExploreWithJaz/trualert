@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   --font-sans: var(--font-inter);
 }
 
@@ -24,11 +24,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
-  /* background-image: url('/map.png');
+  min-height: 100vh;
+  background-image: url('/map-darkmode.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; */
-  min-height: 100vh;
+  background-size: cover;
 }
 
 /* globals.css */
