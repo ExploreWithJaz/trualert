@@ -123,8 +123,8 @@ function page() {
           </div>
         </section> */}
 
-        <section className="px-10 md:px-10 md:mx-11.5 lg:mx-44 xl:px-0 m-0" data-aos="fade-up">
-          <div className="flex flex-col gap-5 py-25 mx-0 max-w-5xl">
+        <section className="w-full" data-aos="fade-up">
+          <div className="flex flex-col gap-5 py-25 mx-auto max-w-5xl px-10 xl:px-0">
             <div className="flex flex-col items-center justify-center text-center">
               <h2 className="text-5xl md:text-6xl xl:text-[80px] font-bold leading-tight">
                 STAY SAFE ANYTIME, ANYWHERE WITH
