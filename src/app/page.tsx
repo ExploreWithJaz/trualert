@@ -6,6 +6,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Navigation from '../components/navigation'
 import Footer from '@/components/footer'
+import Background from '@/components/background';
 import PillButton from '@/components/pillbutton'
 import PulseEffect from '@/components/PulseAnimation'
 import ScrollEffect from '@/components/ScrollEffect'
@@ -19,22 +20,7 @@ function page() {
   return (
     <>
       <Navigation />
-      <div
-        className="fixed inset-0 w-full h-full min-h-screen z-[-1] bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/map.png')",
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          filter: 'invert(100%) brightness(10.18) contrast(1.5) saturate(0.6) hue-rotate(180deg) invert(100%) brightness(0.1)',
-          // Only for mobile: make sure it stays behind and covers
-          minHeight: '100vh',
-          width: '100vw',
-          left: 0,
-          top: 0,
-        }}
-      ></div>
-
+      <Background />
       <div>
         <section className='flex flex-col items-center max-w-[850px] mx-auto gap-5 text-center mt-15 px-5'>
           <div className='text-[47px]/13 md:text-[60px]/13 xl:text-[80px]/21 font-bold w-full'>
@@ -61,7 +47,7 @@ function page() {
           </div>
         </section>
 
-        <section className="w-full overflow-x-hidden" data-aos="fade-up">
+        <section className="w-full overflow-hidden" data-aos="fade-up">
           <div className='mt-[45px] px-2.5'>
             <div className='flex justify-center w-full py-2.5'>
               <div className="w-[1280px] h-[619px] flex justify-center items-center">

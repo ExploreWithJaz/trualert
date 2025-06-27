@@ -25,10 +25,23 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   min-height: 100vh;
-  background-image: url('/map-darkmode.png');
+  /* background-image: url('/map-darkmode.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    background-image: url('/map-darkmode.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 /* globals.css */

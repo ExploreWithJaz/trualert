@@ -8,8 +8,12 @@ function navigation() {
       <div className='hidden xl:block items-center mx-20 w-auto font-sans font-medium'>
         <section className='flex justify-between items-center mx-60 py-8'>
           <div className='flex items-center gap-2'>
+            <a href="/">
             <img className='w-12' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
+            </a>
+            <a href="/">
             <img className='w-32 h-auto' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="Trualert Text" />
+            </a>
           </div>
           <nav>
             <div className='flex text-md'>

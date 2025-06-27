@@ -46,15 +46,15 @@ function footer() {
                             <div>
                                 <p className='mb-[14.4px] text-sm'>Pages</p>
                                 <div className='flex flex-col gap-1.5 text-[#9c9c9c] text-sm'>
-                                    <a href="">About</a>
-                                    <a href="">Terms</a>
-                                    <a href="">Privacy and Security</a>
-                                    <a href="">Blogs</a>
+                                    <a href="/about">About</a>
+                                    <a href="/terms">Terms</a>
+                                    <a href="/privacy-and-security">Privacy and Security</a>
+                                    <a href="/blogs">Blogs</a>
                                 </div>
                             </div>
                             <div className='flex flex-row text-xs text-[#6d6d6d] font-bold'>
-                                <a className='mr-4.5' href="">Privacy & Security</a>
-                                <a className='ml-4.5' href="">Terms</a>
+                                <a className='mr-4.5' href="privacy-and-security">Privacy & Security</a>
+                                <a className='ml-4.5' href="/terms">Terms</a>
                             </div>
                         </div>
                         <div className='flex flex-col gap-20'>
@@ -103,16 +103,16 @@ function footer() {
                                 <div>
                                     <p className='mb-[14.4px] text-sm'>Pages</p>
                                     <div className='flex flex-col gap-1.5 text-[#9c9c9c] text-sm'>
-                                        <a href="">About</a>
-                                        <a href="">Terms</a>
-                                        <a href="">Privacy and Security</a>
-                                        <a href="">Blogs</a>
+                                        <a href="/about">About</a>
+                                        <a href="/terms">Terms</a>
+                                        <a href="/privacy-and-security">Privacy and Security</a>
+                                        <a href="/blogs">Blogs</a>
                                     </div>
                                 </div>
                                 <div>
                                     <div className='flex flex-row text-xs text-[#6d6d6d] font-bold'>
-                                        <a className='mr-4.5' href="">Privacy & Security</a>
-                                        <a className='ml-4.5' href="">Terms</a>
+                                        <a className='mr-4.5' href="privacy-and-security">Privacy & Security</a>
+                                        <a className='ml-4.5' href="/terms">Terms</a>
                                     </div>
                                 </div>
                             </div>
@@ -160,15 +160,15 @@ function footer() {
                                 <div>
                                     <p className='mb-[14.4px] text-sm'>Pages</p>
                                     <div className='flex flex-col gap-1.5 text-[#9c9c9c] text-sm'>
-                                        <a href="">About</a>
-                                        <a href="">Terms</a>
-                                        <a href="">Privacy and Security</a>
-                                        <a href="">Blogs</a>
+                                        <a href="/about">About</a>
+                                        <a href="/terms">Terms</a>
+                                        <a href="/privacy-and-security">Privacy and Security</a>
+                                        <a href="/blogs">Blogs</a>
                                     </div>
                                 </div>
                                 <div className='flex flex-row text-xs text-[#6d6d6d] font-bold'>
-                                    <a className='mr-4.5' href="">Privacy & Security</a>
-                                    <a className='ml-4.5' href="">Terms</a>
+                                    <a className='mr-4.5' href="/privacy-and-security">Privacy & Security</a>
+                                    <a className='ml-4.5' href="/terms">Terms</a>
                                 </div>
                             </div>
                         </div>
