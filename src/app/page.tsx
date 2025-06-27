@@ -105,9 +105,9 @@ function page() {
           {/* Viewport 768px and above */}
           <div className='hidden md:block'>
             <div className='px-10 my-25 xl:px-20 xl:my-35'>
-              <div className='flex flex-row justify-between items-center gap-10 py-5 transition-all duration-300 ease-in-out'>
-                <img className='w-[45%] h-auto rounded-[30px] sm:rounded-[calc(100% - 60px)]' src="/people.png" alt="TRUalert People Talking" />
-                <div className='flex flex-col gap-5'>
+              <div className='flex flex-row justify-between items-center gap-10 py-5 2xl:mx-[232.5px] transition-all duration-300 ease-in-out'>
+                <img className='w-[50%] h-auto rounded-[30px] sm:rounded-[calc(100% - 60px)]' src="/people.png" alt="TRUalert People Talking" data-aos="fade-up"/>
+                <div className='flex flex-col gap-5' data-aos="fade-up" data-aos-delay="200">
                   <p className='text-md xl:text-lg text-[#FF0F0F]'>UNIFIED PROTECTION</p>
                   <h3 className='text-4xl xl:text-5xl font-bold'>BUILDING SAFER COMMUNITIES</h3>
                   <p className='text-md xl:text-lg mb-[14.4px] tracking-wide'>TRUalert is committed to keeping your campus safe and secure. Our dedicated security team works around the clock to ensure students feel protected, allowing you to focus on your studies, make the most of your college experience, and thrive in a safe environment.</p>
@@ -117,13 +117,13 @@ function page() {
 
             <div>
               <div className='px-10 xl:px-20'>
-                <div className='flex flex-row justify-between items-center gap-10 transition-all duration-300 ease-in-out'>
-                  <div className='flex flex-col gap-5'>
+                <div className='flex flex-row justify-between items-center gap-10 2xl:mx-[232.5px] transition-all duration-300 ease-in-out'>
+                  <div className='flex flex-col gap-5' data-aos="fade-up" data-aos-delay="200">
                     <p className='text-md xl:text-lg text-[#FF0F0F]'>ALWAYS READY, ALWAYS RELIABLE</p>
                     <h3 className='text-4xl xl:5xl font-bold'>TRUSTED EMERGENCY HELP, JUST A TAP AWAY</h3>
                     <p className='text-md xl:text-lg mb-[14.4px] tracking-wide'>With TRUalert, you're never alone. One tap connects you to Noonlight's professional dispatchers, who coordinate emergency response via SMS and calls—quick, discreet, and always ready when it matters most.</p>
                   </div>
-                  <img className='w-[50%] h-auto' src="/security.png" alt="TRUalert Security Talking in the Radio" />
+                  <img className='w-[50%] h-auto' src="/security.png" alt="TRUalert Security Talking in the Radio" data-aos="fade-up"/>
                 </div>
               </div>
             </div>
