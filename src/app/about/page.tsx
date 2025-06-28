@@ -18,10 +18,10 @@ function page() {
                 </div>
               </div>
               {/* Title Section */}
-              <div className='flex flex-wrap justify-center gap-5 xl:gap-10 items-center w-full mt-5 px-5 md:mt-10 md:px-0 xl:mt-16'>
-                <p className='text-[32px] md:text-[42px] xl:text-7xl font-bold'>How</p>
-                <img className='w-auto h-7.5 xl:h-13' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="TRUalert Dark Mode Logo" />
-                <p className='text-[32px] md:text-[42px] xl:text-7xl font-bold'>began</p>
+              <div className='flex flex-wrap justify-center gap-5 lg:gap-7.5 xl:gap-10 items-center w-full mt-5 px-5 md:mt-10 md:px-0 xl:mt-16'>
+                <p className='text-[32px] md:text-[42px] lg:text-7xl font-bold'>How</p>
+                <img className='w-auto h-7.5 lg:h-13' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="TRUalert Dark Mode Logo" />
+                <p className='text-[32px] md:text-[42px] lg:text-7xl font-bold'>began</p>
               </div>
               {/* Description Section */}
               <div className='xl:mt-7 xl:p-2.5'>
