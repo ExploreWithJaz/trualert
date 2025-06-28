@@ -2,6 +2,7 @@
 import React from 'react'
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
+import NavBG from '@/components/nav-bg'
 
 function page() {
   return (
@@ -13,6 +14,7 @@ function page() {
             <div className='flex flex-col gap-5 py-10 lg:mx-[57px] xl:pt-8 xl:pb-20 xl:mx-[145px] 2xl:mx-auto 2xl:max-w-[830px]'>
               {/* TRUalert White Logo Section */}
               <div className='flex justify-center items-center w-full'>
+                <NavBG />
                 <div className='w-[108px] h-auto p-5 bg-[#FFF8F8] rounded-[21px]'>
                   <img src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Light-Mode.svg" alt="TRUalert White Logo" />
                 </div>
