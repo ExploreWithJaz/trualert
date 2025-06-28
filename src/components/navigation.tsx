@@ -35,9 +35,11 @@ function navigation() {
       {/* Mobile Navigation */}
       <div className='flex lg:hidden w-full px-5 md:px-10 relative'>
         <section className='flex flex-row justify-between items-center py-7.5 w-full'>
-          <div className='flex items-center gap-1.5 md:gap-5'>
-            <img className='w-[34px] md:w-[48px] h-auto' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
-            <img className='w-[90px] md:w-[130px] h-auto' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="Trualert Text" />
+          <div>
+            <a className='flex items-center gap-1.5 md:gap-5' href="/">
+              <img className='w-[34px] md:w-[48px] h-auto' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
+              <img className='w-[90px] md:w-[130px] h-auto' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="Trualert Text" />
+            </a>
           </div>
           <div className='p-1.5'>
             <button onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
