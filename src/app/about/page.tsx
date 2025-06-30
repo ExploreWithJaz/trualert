@@ -101,6 +101,31 @@ function page() {
           </div>
         </section>
 
+        <section>
+          <div className='px-5 md:px-10 lg:px-20'>
+            <div className='flex flex-col justify-center gap-5 mx-auto max-w-[900px] py-20'>
+              {/* header */}
+              <div className='text-left text-[28px] md:text-center md:text-[38px] lg:text-5xl font-bold'>
+                <h2>How we're doing it</h2>
+              </div>
+              {/* content */}
+              <div className='flex flex-row flex-wrap lg:flex-nowrap gap-5 md:gap-10 lg:w-[90%] md:mt-6 tracking-wide font-light'>
+                <div className="md:flex-1">
+                  <p className='mb-[14.4px]'>TRUalert solves a critical safety need by combining smart, efficient technology with reliable emergency dispatch—without the need for guards, tracking, or complex systems.</p>
+                  <p className='mb-[14.4px]'>In partnership with Noonlight, TRUalert connects users to trained dispatchers who coordinate real emergency responses through SMS and phone calls.</p>
+                </div>
+                <div className="md:flex-1">
+                  <p className='mb-[14.4px]'>Behind the scenes, it's a robust and secure platform. But for the user, it's beautifully simple: press a button, and help is on the way.</p>
+                  <p className='mb-[14.4px]'>By eliminating the need for patrols or live location sharing, TRUalert delivers a private, direct, and effective way to get assistance in urgent moments. It's safety, reimagined—accessible to everyone, anywhere, with just a tap.</p>
+                </div>
+              </div>
+              <div>
+                <img src="Illustration-3-768x477.png" alt="TRUalert Tap Me! Button" />
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
       <Footer />
     </>
