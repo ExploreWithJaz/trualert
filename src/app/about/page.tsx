@@ -125,7 +125,44 @@ function page() {
             </div>
           </div>
         </section>
-
+        
+        <section>
+          <div className='px-5 md:px-10 lg:px-20 w-full bg-[#1A1A1A]'>
+            <div className='flex flex-col justify-center items-center gap-5 mx-auto max-w-[1280px] py-20'>
+              <div className='text-center text-5xl font-bold'>
+                <h2>Our Team</h2>
+              </div>
+              <div>
+                <img src="/layer-0-2.png" alt="Three Male Looking at the Camera" />
+              </div>
+              <div className='flex flex-row gap-10 mt-4'>
+                <div className='flex flex-col gap-5'>
+                  <h3 className='text-2xl font-bold'>Faatuiese P. Roberts</h3>
+                  <h4 className='text-lg font-bold'>Chief Executive Officer & Co-Founder</h4>
+                  <div className='font-light tracking-wide'>
+                    <p className='mb-[14.4px]'>Faatuiese P. Roberts is the CEO and Co-Founder of Citizens Tech LLC. A proud Samoan-American raised in Orange County, California, by a U.S. Marine veteran father and a devoted Christian mother, Faatuiese leads with deeply rooted values of discipline, integrity, and community.</p>
+                    <p className='mb-[14.4px]'>With a hands-on approach to leadership, he is actively involved in the company's day-to-day operations, ensuring that TRUalert consistently delivers on its mission to enhance safety and security. As the sole investor, Faatuiese brings not only financial commitment but also a strong personal conviction to the company’s vision. His unwavering dedication and entrepreneurial drive continue to guide TRUalert's growth and impact in the safety technology sector.</p>
+                  </div>
+                </div>
+                <div className='flex flex-col gap-5'>
+                  <h3 className='text-2xl font-bold'>Raymond Leuta</h3>
+                  <h4 className='text-lg font-bold'>Co-Founder & Security Operations Advisor</h4>
+                  <div className='font-light tracking-wide'>
+                    <p className='mb-[14.4px]'>Raymond Leuta is the Co-Founder and Security Operations Advisor, bringing over 30 years of experience in the private security industry. A licensed security officer and certified trainer, Raymond has built a career on excellence in security personnel management, risk assessment, and tactical operations. He has worked alongside local police departments in various cities, strengthening public-private coordination and enhancing emergency response strategies.</p>
+                    <p className='mb-[14.4px]'>Raymond serves as the key liaison between the company and the security patrol agencies that respond to subscriber alerts. His expertise in risk assessment and field operations ensures TRUalert's services are both proactive and seamlessly aligned with industry best practices, delivering dependable, professional protection to every customer.</p>
+                  </div>
+                </div>
+                <div className='flex flex-col gap-5'>
+                  <h3 className='text-2xl font-bold'>Brandon Delijani</h3>
+                  <h4 className='text-lg font-bold'>In-House Counsel & Compliance Advisor</h4>
+                  <div className='font-light tracking-wide'>
+                    <p className='mb-[14.4px]'>Brandon Delijani serves as TRUalert's In-House Counsel and Compliance Advisor, overseeing the company's legal and regulatory framework. With a sharp legal mind and meticulous attention to detail, Brandon manages all contractual matters and ensures that TRUalert remains fully compliant with industry regulations and legal standards. His expertise provides critical protection for both the company and its subscribers, laying a strong foundation of trust, accountability, and sustainable growth.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <Footer />
     </>
