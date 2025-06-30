@@ -62,9 +62,47 @@ function page() {
             </div>
           </div>
         </section>
+
+        <section>
+          <div className='px-5 md:px-10 lg:px-20'>
+            <div className='py-10 md:py-20 xl:py-0'>
+              <div
+                className='relative flex justify-center items-center w-full max-w-[1280px] sm:h-[500px] md:h-[673px] lg:h-[800px] rounded-[20px] shadow-lg mx-auto bg-cover bg-top sm:px-2.5 sm:pt-5 sm:pb-2.5 md:pt-12.5 md:pb-10'
+                style={{
+                  backgroundImage: "url('/pexels-rdne-7683745-scaled.jpeg')",
+                }}
+                aria-label="People helping each other"
+              >
+                {/* Gradient Overlay - Different for mobile and desktop */}
+                <div className='absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/90 lg:from-transparent lg:from-50% lg:via-transparent lg:to-black lg:to-96% rounded-[20px]'></div>
+
+                {/* Content Overlay */}
+                <div className='relative z-10 flex flex-col justify-between items-center w-full h-full'>
+                  <div className='text-center font-bold md:w-[90%] lg:w-[51%]'>
+                    <h2 className='text-[28px] md:text-[38px]/11 lg:text-5xl/16 text-black'>
+                      Empowering Communities. <span className='text-[#FF0F0F]'>Reducing Crime.</span>
+                    </h2>
+                  </div>
+                  <div className='flex flex-row flex-wrap lg:flex-nowrap justify-center items-center gap-5 md:gap-10 md:w-[90%] lg:w-[80%] tracking-wide'>
+                    <div>
+                      <p className='text-white mb-[14.4px]'>
+                        Communities across the nation are facing rising levels of crime, leaving residents feeling vulnerable and unsafe. Criminals often operate with impunity, knowing that ordinary citizens lack the means to defend themselves or summon help quickly. This sense of insecurity is eroding the quality of life in our neighborhoods.
+                      </p>
+                    </div>
+                    <div>
+                      <p className='text-white mb-[14.4px]'>
+                        TRUalert seeks to change this dynamic by empowering individuals with immediate access to security services, deterring criminal activity, and restoring peace of mind. When criminals know that TRUalert is in use, they will think twice before targeting innocent people, ultimately reducing crime and making our communities safer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
       <Footer />
-
     </>
   )
 }
