@@ -125,7 +125,7 @@ function page() {
             </div>
           </div>
         </section>
-        
+
         <section>
           <div className='px-5 md:px-10 lg:px-20 w-full bg-[#1A1A1A]'>
             <div className='flex flex-col justify-center items-center gap-5 mx-auto max-w-[1280px] py-20'>
@@ -133,11 +133,11 @@ function page() {
                 <h2>Our Team</h2>
               </div>
               <div>
-                <img src="/layer-0-2.png" alt="Three Male Looking at the Camera" />
+                <img className='rounded-[20px]' src="/layer-0-2.png" alt="Three Male Looking at the Camera" />
               </div>
-              <div className='flex flex-row gap-10 mt-4'>
+              <div className='flex flex-row flex-wrap md:flex-nowrap md:grid grid-cols-2 xl:flex gap-10 mt-4'>
                 <div className='flex flex-col gap-5'>
-                  <h3 className='text-2xl font-bold'>Faatuiese P. Roberts</h3>
+                  <h3 className='text-lg md:text-2xl font-bold'>Faatuiese P. Roberts</h3>
                   <h4 className='text-lg font-bold'>Chief Executive Officer & Co-Founder</h4>
                   <div className='font-light tracking-wide'>
                     <p className='mb-[14.4px]'>Faatuiese P. Roberts is the CEO and Co-Founder of Citizens Tech LLC. A proud Samoan-American raised in Orange County, California, by a U.S. Marine veteran father and a devoted Christian mother, Faatuiese leads with deeply rooted values of discipline, integrity, and community.</p>
@@ -145,7 +145,7 @@ function page() {
                   </div>
                 </div>
                 <div className='flex flex-col gap-5'>
-                  <h3 className='text-2xl font-bold'>Raymond Leuta</h3>
+                  <h3 className='text-lg md:text-2xl font-bold'>Raymond Leuta</h3>
                   <h4 className='text-lg font-bold'>Co-Founder & Security Operations Advisor</h4>
                   <div className='font-light tracking-wide'>
                     <p className='mb-[14.4px]'>Raymond Leuta is the Co-Founder and Security Operations Advisor, bringing over 30 years of experience in the private security industry. A licensed security officer and certified trainer, Raymond has built a career on excellence in security personnel management, risk assessment, and tactical operations. He has worked alongside local police departments in various cities, strengthening public-private coordination and enhancing emergency response strategies.</p>
@@ -153,7 +153,7 @@ function page() {
                   </div>
                 </div>
                 <div className='flex flex-col gap-5'>
-                  <h3 className='text-2xl font-bold'>Brandon Delijani</h3>
+                  <h3 className='text-lg md:text-2xl font-bold'>Brandon Delijani</h3>
                   <h4 className='text-lg font-bold'>In-House Counsel & Compliance Advisor</h4>
                   <div className='font-light tracking-wide'>
                     <p className='mb-[14.4px]'>Brandon Delijani serves as TRUalert's In-House Counsel and Compliance Advisor, overseeing the company's legal and regulatory framework. With a sharp legal mind and meticulous attention to detail, Brandon manages all contractual matters and ensures that TRUalert remains fully compliant with industry regulations and legal standards. His expertise provides critical protection for both the company and its subscribers, laying a strong foundation of trust, accountability, and sustainable growth.</p>
@@ -163,6 +163,44 @@ function page() {
             </div>
           </div>
         </section>
+
+        <section>
+          <div className='px-5 md:px-10 lg:px-20 w-full bg-[#141414]'>
+            <div className='flex flex-col justify-center items-center gap-5 mx-auto max-w-[1280px]'>
+              <div className='relative flex flex-col justify-center items-center gap-10 px-20 py-37.5 text-center'>
+                {/* Background with filter applied */}
+                <div
+                  className='absolute inset-0 bg-cover bg-center'
+                  style={{
+                    backgroundImage: "url('/BG.svg')",
+                    filter: 'invert(100%) brightness(10.18) contrast(1.5) saturate(0.6) hue-rotate(180deg) invert(100%) brightness(0.1)',
+                  }}
+                />
+
+                {/* Fade overlay on all four sides */}
+                <div
+                  className='absolute inset-0'
+                  style={{
+                    background: `
+              linear-gradient(to right, #141414 0%, transparent 15%, transparent 85%, #141414 100%),
+              linear-gradient(to bottom, #141414 0%, transparent 15%, transparent 85%, #141414 100%)
+            `,
+                    zIndex: 1
+                  }}
+                />
+
+                {/* Content without filter interference */}
+                <h2 className='relative text-5xl/16 font-bold text-[#EDEDED] z-10'>
+                  Together, this team is perfectly positioned to lead TRUalert with a unique blend of experience, dedication, and expertise.
+                </h2>
+                <p className='relative text-lg mb-[14.4px] text-[#EDEDED] font-light w-[74%] tracking-wide z-10'>
+                  Their combined strengths ensure that TRUalert not only meets the highest standards of security but also resonates deeply with the communities it serves.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
       <Footer />
     </>
