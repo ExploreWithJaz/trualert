@@ -30,7 +30,7 @@ function page() {
                 <div className='flex flex-row flex-wrap lg:flex-nowrap justify-evenly items-start gap-5 md:gap-10 md:mx-auto md:max-w-[830px] font-light tracking-wide'>
                   <div className='flex flex-col gap-5 w-full xl:max-w-[381px] h-auto'>
                     <div>
-                      <p className='mb-[14.4px]'>As an entrepreneur and business owner, I've often found myself traveling far from home, sometimes for days on end. During these trips, the safety and security of my loved ones—my spouse, my six children, and my parents—are constantly on my mind. I’ve always believed that everyone, especially those who cannot defend themselves, like young children and the elderly, deserves protection.</p>
+                      <p className='mb-[14.4px]'>As an entrepreneur and business owner, I've often found myself traveling far from home, sometimes for days on end. During these trips, the safety and security of my loved ones—my spouse, my six children, and my parents—are constantly on my mind. I've always believed that everyone, especially those who cannot defend themselves, like young children and the elderly, deserves protection.</p>
                     </div>
                     <div>
                       <p className='mb-[14.4px]'>It's always troubled me that while the wealthy and powerful—Hollywood stars, politicians, and the elite—can afford 24/7 private security, the average American does not have the same access. Why should safety be a privilege reserved for the few? I believe that everyone should have the right to choose the level of protection that fits their needs, without breaking the bank.</p>
@@ -38,7 +38,7 @@ function page() {
                   </div>
                   <div className='flex flex-col gap-5 w-full xl:max-w-[381px] h-auto'>
                     <div>
-                      <p className='mb-[14.4px]'>Growing up in California, I've witnessed the changes in our communities firsthand. The rise in crime and the homeless population, particularly in Orange County, has led to public health issues and increased concern for our safety. It’s clear that the need for affordable, reliable security has never been greater.</p>
+                      <p className='mb-[14.4px]'>Growing up in California, I've witnessed the changes in our communities firsthand. The rise in crime and the homeless population, particularly in Orange County, has led to public health issues and increased concern for our safety. It's clear that the need for affordable, reliable security has never been greater.</p>
                     </div>
                     <div>
                       <p className='mb-[14.4px]'>TRUalert was born out of this need—a desire to empower ordinary citizens with the same level of security that the elite take for granted. Our mission is to make personal safety accessible to everyone, ensuring that you and your loved ones can feel secure, no matter where you are.</p>
@@ -141,7 +141,7 @@ function page() {
                   <h4 className='text-lg font-bold'>Chief Executive Officer & Co-Founder</h4>
                   <div className='font-light tracking-wide'>
                     <p className='mb-[14.4px]'>Faatuiese P. Roberts is the CEO and Co-Founder of Citizens Tech LLC. A proud Samoan-American raised in Orange County, California, by a U.S. Marine veteran father and a devoted Christian mother, Faatuiese leads with deeply rooted values of discipline, integrity, and community.</p>
-                    <p className='mb-[14.4px]'>With a hands-on approach to leadership, he is actively involved in the company's day-to-day operations, ensuring that TRUalert consistently delivers on its mission to enhance safety and security. As the sole investor, Faatuiese brings not only financial commitment but also a strong personal conviction to the company’s vision. His unwavering dedication and entrepreneurial drive continue to guide TRUalert's growth and impact in the safety technology sector.</p>
+                    <p className='mb-[14.4px]'>With a hands-on approach to leadership, he is actively involved in the company's day-to-day operations, ensuring that TRUalert consistently delivers on its mission to enhance safety and security. As the sole investor, Faatuiese brings not only financial commitment but also a strong personal conviction to the company's vision. His unwavering dedication and entrepreneurial drive continue to guide TRUalert's growth and impact in the safety technology sector.</p>
                   </div>
                 </div>
                 <div className='flex flex-col gap-5'>
@@ -165,9 +165,9 @@ function page() {
         </section>
 
         <section>
-          <div className='px-5 md:px-10 lg:px-20 w-full bg-[#141414]'>
-            <div className='flex flex-col justify-center items-center gap-5 mx-auto max-w-[1280px]'>
-              <div className='relative flex flex-col justify-center items-center gap-10 px-20 py-37.5 text-center'>
+          <div className='px-5 md:px-10 w-full bg-[#141414]'>
+            <div className='flex flex-col justify-center items-center gap-5 mx-auto lg:max-w-[1280px]'>
+              <div className='relative flex flex-col justify-center items-center gap-5 md:gap-10 py-10 md:py-20 lg:px-20 lg:py-37.5 text-center'>
                 {/* Background with filter applied */}
                 <div
                   className='absolute inset-0 bg-cover bg-center'
@@ -190,12 +190,54 @@ function page() {
                 />
 
                 {/* Content without filter interference */}
-                <h2 className='relative text-5xl/16 font-bold text-[#EDEDED] z-10'>
+                <h2 className='relative text-[26px]/7 md:text-[38px]/11 lg:text-5xl/16 font-bold text-[#EDEDED] z-10'>
                   Together, this team is perfectly positioned to lead TRUalert with a unique blend of experience, dedication, and expertise.
                 </h2>
-                <p className='relative text-lg mb-[14.4px] text-[#EDEDED] font-light w-[74%] tracking-wide z-10'>
+                <p className='relative text-lg mb-[14.4px] text-[#EDEDED] font-light md:w-[74%] tracking-wide z-10'>
                   Their combined strengths ensure that TRUalert not only meets the highest standards of security but also resonates deeply with the communities it serves.
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className='px-5 py-10 md:py-0 md:px-10 lg:px-20 w-full bg-[#1A1A1A]'>
+            <div className='flex flex-col justify-center items-center gap-5 md:py-20 bg-bottom bg-no-repeat'
+            style={{ backgroundImage: "url('/Union-1.svg')" }}>
+              {/* Header and Content */}
+              <div className='flex flex-col justify-center items-center gap-5 mx-auto lg:max-w-[800px]'>
+                <div className='w-full xl:w-[66%] text-center'>
+                  <h2 className='text-[28px] md:text-[38px]/11 xl:text-5xl/16 font-bold'>Trusted Professionals. <span className='text-[#FF0F0F]'>Proven Protection.</span></h2>
+                </div>
+                <div className='flex flex-row flex-wrap lg:flex-nowrap gap-5 lg:gap-10 lg:mt-6 tracking-wide font-light text-[#EDEDED]'>
+                  <div className='flex flex-col gap-5 lg:flex-1'>
+                    <p className='mb-[14.4px]'>At TRUalert, your safety is our top priority. That's why we've partnered with Noonlight, a trusted emergency response provider that connects users with certified dispatchers trained to handle urgent situations—quickly, discreetly, and professionally.</p>
+                    <p className='mb-[14.4px]'>With just one tap, you're connected to real human support. Noonlight dispatchers are trained to assess emergencies, communicate through SMS and calls, and coordinate the appropriate response, whether that means sending police, fire, or medical help.</p>
+                  </div>
+                  <div className='flex flex-col gap-5 lg:flex-1'>
+                    <p className='mb-[14.4px]'>There's no live tracking, no need for guards, and no complicated systems—just real help, when and where you need it.</p>
+                    <p className='mb-[14.4px]'>TRUalert replaces traditional patrols with modern, efficient response you can rely on. It's safety, reimagined for everyday people—because peace of mind shouldn't be a luxury.</p>
+                  </div>
+                </div>
+              </div>
+              {/* Gallery Photos */}
+              <div className='flex flex-row flex-wrap lg:flex-nowrap justify-evenly md:justify-center items-center gap-5 md:gap-7.5 w-full p-2.5'>
+                <div className='md:pt-22.5'>
+                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] rounded-[20px] object-cover object-center md:mt-22.5' src="remove-2-223x300.png" alt="" />
+                </div>
+                <div>
+                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] rounded-[20px] object-cover object-center  md:mt-22.5' src="/Layer-0-3-223x300.png" alt="" />
+                </div>
+                <div className='md:pt-22.5'>
+                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] rounded-[20px] object-cover object-center md:mt-22.5' src="remove-1-223x300.png" alt="" />
+                </div>
+                <div>
+                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] object-cover object-center rounded-[20px] md:mt-22.5' src="/Layer-0-2-768x372.png" alt="" />
+                </div>
+                <div className='md:pt-22.5'>
+                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] object-cover object-center rounded-[20px] md:mt-22.5' src="/Layer-0-4.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
