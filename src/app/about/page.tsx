@@ -204,7 +204,7 @@ function page() {
         <section>
           <div className='px-5 py-10 md:py-0 md:px-10 lg:px-20 w-full bg-[#1A1A1A]'>
             <div className='flex flex-col justify-center items-center gap-5 md:py-20 bg-bottom bg-no-repeat'
-            style={{ backgroundImage: "url('/Union-1.svg')" }}>
+              style={{ backgroundImage: "url('/Union-1.svg')" }}>
               {/* Header and Content */}
               <div className='flex flex-col justify-center items-center gap-5 mx-auto lg:max-w-[800px]'>
                 <div className='w-full xl:w-[66%] text-center'>
@@ -237,6 +237,30 @@ function page() {
                 </div>
                 <div className='md:pt-22.5'>
                   <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] object-cover object-center rounded-[20px] md:mt-22.5' src="/Layer-0-4.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className='px-5 md:px-10 lg:px-35 bg-contain lg:bg-cover bg-no-repeat bg-top lg:bg-center w-auto h-[550px] lg:h-[500px] lg:min-h-[800px]'
+            style={{ backgroundImage: "url('/Map.svg')" }}>
+            <div className='lg:pb-22.5 lg:pt-20 h-full'>
+              <div className='flex flex-col justify-center lg:justify-end items-start gap-5 h-full mx-auto max-w-[1280px]'>
+                <div className='flex flex-col justify-center gap-5 lg:w-[526px] lg:p-2.5'>
+                  <h2 className='text-[28px] md:text-[38px] lg:text-5xl font-bold'>Areas Served</h2>
+                  <div className='font-light tracking-normal lg:tracking-wide text-[#EDEDED]'>
+                    <p className='mb-[14.4px]'>Orange County, California, is a region of stunning beaches and vibrant communities, but rising crime rates have begun to impact the sense of security many residents once enjoyed.</p>
+                    <p className='mb-[14.4px]'>As the area faces these growing challenges, TRUalert offers a solution, empowering locals with reliable security services to help protect their homes and neighborhoods while preserving the quality of life they cherish. Here are all the areas we serve today.</p>
+                  </div>
+                  <div className='h-full'>
+                    <button className='px-6 py-3 bg-[#FF0F0F] font-semibold rounded-md text-[15px] text-[#EDEDED]' >
+                      <a href="https://trualert.com/service-areas">
+                        View All Locations
+                      </a>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
