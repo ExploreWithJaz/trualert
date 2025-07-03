@@ -1,8 +1,10 @@
 'use client';
 import React from 'react'
+import { usePathname } from 'next/navigation';
 import { useScrollToTop } from '@/components/useScrollToTop'
 
 function footer() {
+    const pathname = usePathname();
     const scrollToTop = useScrollToTop({
         duration: 800,
         behavior: 'smooth'
@@ -38,7 +40,7 @@ function footer() {
 
                     {/* divider */}
                     <div className='border-b border-b-[#525252] border-solid my-5'></div>
-                    
+
                     {/* footer content */}
                     {/* Viewport 320px - 768px */}
                     <div className='flex flex-col gap-5 md:hidden'>
@@ -46,15 +48,51 @@ function footer() {
                             <div>
                                 <p className='mb-[14.4px] text-sm'>Pages</p>
                                 <div className='flex flex-col gap-1.5 text-[#9c9c9c] text-sm'>
-                                    <a href="/about">About</a>
-                                    <a href="/terms">Terms</a>
-                                    <a href="/privacy-and-security">Privacy and Security</a>
-                                    <a href="/blogs">Blogs</a>
+                                    <a
+                                        href="/about"
+                                        className={pathname === '/about' ? 'text-[#FF0F0F]' : ''}
+                                        aria-current={pathname === '/about' ? 'page' : undefined}
+                                    >
+                                        About
+                                    </a>
+                                    <a
+                                        href="/terms"
+                                        className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
+                                        aria-current={pathname === '/terms' ? 'page' : undefined}
+                                    >
+                                        Terms
+                                    </a>
+                                    <a
+                                        href="/privacy-and-security"
+                                        className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
+                                        aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
+                                    >
+                                        Privacy and Security
+                                    </a>
+                                    <a
+                                        href="/blogs"
+                                        className={pathname === '/blogs' ? 'text-[#FF0F0F]' : ''}
+                                        aria-current={pathname === '/blogs' ? 'page' : undefined}
+                                    >
+                                        Blogs
+                                    </a>
                                 </div>
                             </div>
                             <div className='flex flex-row text-xs text-[#6d6d6d] font-bold'>
-                                <a className='mr-4.5' href="privacy-and-security">Privacy & Security</a>
-                                <a className='ml-4.5' href="/terms">Terms</a>
+                                <a
+                                    href="/privacy-and-security"
+                                    className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
+                                    aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
+                                >
+                                    Privacy and Security
+                                </a>
+                                <a
+                                    href="/terms"
+                                    className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
+                                    aria-current={pathname === '/terms' ? 'page' : undefined}
+                                >
+                                    Terms
+                                </a>
                             </div>
                         </div>
                         <div className='flex flex-col gap-20'>
@@ -103,16 +141,52 @@ function footer() {
                                 <div>
                                     <p className='mb-[14.4px] text-sm'>Pages</p>
                                     <div className='flex flex-col gap-1.5 text-[#9c9c9c] text-sm'>
-                                        <a href="/about">About</a>
-                                        <a href="/terms">Terms</a>
-                                        <a href="/privacy-and-security">Privacy and Security</a>
-                                        <a href="/blogs">Blogs</a>
+                                        <a
+                                            href="/about"
+                                            className={pathname === '/about' ? 'text-[#FF0F0F]' : ''}
+                                            aria-current={pathname === '/about' ? 'page' : undefined}
+                                        >
+                                            About
+                                        </a>
+                                        <a
+                                            href="/terms"
+                                            className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
+                                            aria-current={pathname === '/terms' ? 'page' : undefined}
+                                        >
+                                            Terms
+                                        </a>
+                                        <a
+                                            href="/privacy-and-security"
+                                            className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
+                                            aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
+                                        >
+                                            Privacy and Security
+                                        </a>
+                                        <a
+                                            href="/blogs"
+                                            className={pathname === '/blogs' ? 'text-[#FF0F0F]' : ''}
+                                            aria-current={pathname === '/blogs' ? 'page' : undefined}
+                                        >
+                                            Blogs
+                                        </a>
                                     </div>
                                 </div>
                                 <div>
                                     <div className='flex flex-row text-xs text-[#6d6d6d] font-bold'>
-                                        <a className='mr-4.5' href="privacy-and-security">Privacy & Security</a>
-                                        <a className='ml-4.5' href="/terms">Terms</a>
+                                        <a
+                                            href="/privacy-and-security"
+                                            className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
+                                            aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
+                                        >
+                                            Privacy and Security
+                                        </a>
+                                        <a
+                                            href="/terms"
+                                            className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
+                                            aria-current={pathname === '/terms' ? 'page' : undefined}
+                                        >
+                                            Terms
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -160,15 +234,51 @@ function footer() {
                                 <div>
                                     <p className='mb-[14.4px] text-sm'>Pages</p>
                                     <div className='flex flex-col gap-1.5 text-[#9c9c9c] text-sm'>
-                                        <a href="/about">About</a>
-                                        <a href="/terms">Terms</a>
-                                        <a href="/privacy-and-security">Privacy and Security</a>
-                                        <a href="/blogs">Blogs</a>
+                                        <a
+                                            href="/about"
+                                            className={pathname === '/about' ? 'text-[#FF0F0F]' : ''}
+                                            aria-current={pathname === '/about' ? 'page' : undefined}
+                                        >
+                                            About
+                                        </a>
+                                        <a
+                                            href="/terms"
+                                            className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
+                                            aria-current={pathname === '/terms' ? 'page' : undefined}
+                                        >
+                                            Terms
+                                        </a>
+                                        <a
+                                            href="/privacy-and-security"
+                                            className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
+                                            aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
+                                        >
+                                            Privacy and Security
+                                        </a>
+                                        <a
+                                            href="/blogs"
+                                            className={pathname === '/blogs' ? 'text-[#FF0F0F]' : ''}
+                                            aria-current={pathname === '/blogs' ? 'page' : undefined}
+                                        >
+                                            Blogs
+                                        </a>
                                     </div>
                                 </div>
                                 <div className='flex flex-row text-xs text-[#6d6d6d] font-bold'>
-                                    <a className='mr-4.5' href="/privacy-and-security">Privacy & Security</a>
-                                    <a className='ml-4.5' href="/terms">Terms</a>
+                                    <a
+                                        href="/privacy-and-security"
+                                        className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
+                                        aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
+                                    >
+                                        Privacy and Security
+                                    </a>
+                                    <a
+                                        href="/terms"
+                                        className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
+                                        aria-current={pathname === '/terms' ? 'page' : undefined}
+                                    >
+                                        Terms
+                                    </a>
                                 </div>
                             </div>
                         </div>
