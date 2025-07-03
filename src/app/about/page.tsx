@@ -1,10 +1,18 @@
 'use client'
 import React from 'react'
+import { useEffect } from 'react'
+
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
 import NavBG from '@/components/nav-bg'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 function page() {
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
   return (
     <>
       <Navigation />
@@ -15,19 +23,19 @@ function page() {
               {/* TRUalert White Logo Section */}
               <div className='flex justify-center items-center w-full'>
                 <NavBG />
-                <div className='w-[108px] h-auto p-5 bg-[#FFF8F8] rounded-[21px]'>
+                <div className='w-[108px] h-auto p-5 bg-[#FFF8F8] rounded-[21px]' data-aos="fade-up">
                   <img src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Light-Mode.svg" alt="TRUalert White Logo" />
                 </div>
               </div>
               {/* Title Section */}
               <div className='flex flex-wrap justify-center gap-5 lg:gap-7.5 xl:gap-8 items-center w-full mt-5 px-5 md:mt-10 md:px-0 xl:mt-16'>
-                <p className='text-[32px] md:text-[42px] lg:text-7xl font-bold'>How</p>
+                <p className='text-[32px] md:text-[42px] lg:text-7xl font-bold' data-aos="fade-in" data-aos-delay="100">How</p>
                 <img className='w-auto h-7.5 lg:h-13' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="TRUalert Dark Mode Logo" />
-                <p className='text-[32px] md:text-[42px] lg:text-7xl font-bold'>began</p>
+                <p className='text-[32px] md:text-[42px] lg:text-7xl font-bold' data-aos="fade-in" data-aos-delay="100">began</p>
               </div>
               {/* Description Section */}
               <div className='xl:mt-7 xl:p-2.5'>
-                <div className='flex flex-row flex-wrap lg:flex-nowrap justify-evenly items-start gap-5 md:gap-10 md:mx-auto md:max-w-[830px] font-light tracking-wide'>
+                <div className='flex flex-row flex-wrap lg:flex-nowrap justify-evenly items-start gap-5 md:gap-10 md:mx-auto md:max-w-[830px] font-light tracking-wide' data-aos="fade-in" data-aos-delay="200">
                   <div className='flex flex-col gap-5 w-full xl:max-w-[381px] h-auto'>
                     <div>
                       <p className='mb-[14.4px]'>As an entrepreneur and business owner, I've often found myself traveling far from home, sometimes for days on end. During these trips, the safety and security of my loved ones—my spouse, my six children, and my parents—are constantly on my mind. I've always believed that everyone, especially those who cannot defend themselves, like young children and the elderly, deserves protection.</p>
@@ -64,7 +72,7 @@ function page() {
         </section>
 
         <section>
-          <div className='px-5 md:px-10 lg:px-20'>
+          <div className='px-5 md:px-10 lg:px-20' data-aos="fade-in" data-aos-delay="100">
             <div className='py-10 md:py-20 xl:py-0'>
               <div
                 className='relative flex justify-center items-center w-full max-w-[1280px] sm:h-[500px] md:h-[673px] lg:h-[800px] rounded-[20px] shadow-lg mx-auto bg-cover bg-top sm:px-2.5 sm:pt-5 sm:pb-2.5 md:pt-12.5 md:pb-10'
@@ -110,11 +118,11 @@ function page() {
               </div>
               {/* content */}
               <div className='flex flex-row flex-wrap lg:flex-nowrap gap-5 md:gap-10 lg:w-[90%] md:mt-6 tracking-wide font-light'>
-                <div className="md:flex-1">
+                <div className="md:flex-1" data-aos="fade-in">
                   <p className='mb-[14.4px]'>TRUalert solves a critical safety need by combining smart, efficient technology with reliable emergency dispatch—without the need for guards, tracking, or complex systems.</p>
                   <p className='mb-[14.4px]'>In partnership with Noonlight, TRUalert connects users to trained dispatchers who coordinate real emergency responses through SMS and phone calls.</p>
                 </div>
-                <div className="md:flex-1">
+                <div className="md:flex-1" data-aos="fade-in">
                   <p className='mb-[14.4px]'>Behind the scenes, it's a robust and secure platform. But for the user, it's beautifully simple: press a button, and help is on the way.</p>
                   <p className='mb-[14.4px]'>By eliminating the need for patrols or live location sharing, TRUalert delivers a private, direct, and effective way to get assistance in urgent moments. It's safety, reimagined—accessible to everyone, anywhere, with just a tap.</p>
                 </div>
@@ -133,7 +141,7 @@ function page() {
                 <h2>Our Team</h2>
               </div>
               <div>
-                <img className='rounded-[20px]' src="/layer-0-2.png" alt="Three Male Looking at the Camera" />
+                <img className='rounded-[20px]' src="/layer-0-2.png" alt="Three Male Looking at the Camera" data-aos="fade-in" />
               </div>
               <div className='flex flex-row flex-wrap md:flex-nowrap md:grid grid-cols-2 xl:flex gap-10 mt-4'>
                 <div className='flex flex-col gap-5'>
@@ -193,7 +201,7 @@ function page() {
                 <h2 className='relative text-[26px]/7 md:text-[38px]/11 lg:text-5xl/16 font-bold text-[#EDEDED] z-10'>
                   Together, this team is perfectly positioned to lead TRUalert with a unique blend of experience, dedication, and expertise.
                 </h2>
-                <p className='relative text-lg mb-[14.4px] text-[#EDEDED] font-light md:w-[74%] tracking-wide z-10'>
+                <p className='relative text-lg mb-[14.4px] text-[#EDEDED] font-light md:w-[74%] tracking-wide z-10' data-aos="fade-in">
                   Their combined strengths ensure that TRUalert not only meets the highest standards of security but also resonates deeply with the communities it serves.
                 </p>
               </div>
@@ -211,18 +219,18 @@ function page() {
                   <h2 className='text-[28px] md:text-[38px]/11 xl:text-5xl/16 font-bold'>Trusted Professionals. <span className='text-[#FF0F0F]'>Proven Protection.</span></h2>
                 </div>
                 <div className='flex flex-row flex-wrap lg:flex-nowrap gap-5 lg:gap-10 lg:mt-6 tracking-wide font-light text-[#EDEDED]'>
-                  <div className='flex flex-col gap-5 lg:flex-1'>
+                  <div className='flex flex-col gap-5 lg:flex-1' data-aos="fade-in">
                     <p className='mb-[14.4px]'>At TRUalert, your safety is our top priority. That's why we've partnered with Noonlight, a trusted emergency response provider that connects users with certified dispatchers trained to handle urgent situations—quickly, discreetly, and professionally.</p>
                     <p className='mb-[14.4px]'>With just one tap, you're connected to real human support. Noonlight dispatchers are trained to assess emergencies, communicate through SMS and calls, and coordinate the appropriate response, whether that means sending police, fire, or medical help.</p>
                   </div>
-                  <div className='flex flex-col gap-5 lg:flex-1'>
+                  <div className='flex flex-col gap-5 lg:flex-1' data-aos="fade-in">
                     <p className='mb-[14.4px]'>There's no live tracking, no need for guards, and no complicated systems—just real help, when and where you need it.</p>
                     <p className='mb-[14.4px]'>TRUalert replaces traditional patrols with modern, efficient response you can rely on. It's safety, reimagined for everyday people—because peace of mind shouldn't be a luxury.</p>
                   </div>
                 </div>
               </div>
               {/* Gallery Photos */}
-              <div className='flex flex-row flex-wrap lg:flex-nowrap justify-evenly md:justify-center items-center gap-5 md:gap-7.5 w-full p-2.5'>
+              <div className='flex flex-row flex-wrap lg:flex-nowrap justify-evenly md:justify-center items-center gap-5 md:gap-7.5 w-full p-2.5' data-aos="fade-in">
                 <div className='md:pt-22.5'>
                   <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] rounded-[20px] object-cover object-center md:mt-22.5' src="remove-2-223x300.png" alt="" />
                 </div>
@@ -250,7 +258,7 @@ function page() {
               <div className='flex flex-col justify-center lg:justify-end items-start gap-5 h-full mx-auto max-w-[1280px]'>
                 <div className='flex flex-col justify-center gap-5 lg:w-[526px] lg:p-2.5'>
                   <h2 className='text-[28px] md:text-[38px] lg:text-5xl font-bold'>Areas Served</h2>
-                  <div className='font-light tracking-normal lg:tracking-wide text-[#EDEDED]'>
+                  <div className='font-light tracking-normal lg:tracking-wide text-[#EDEDED]' data-aos="fade-in">
                     <p className='mb-[14.4px]'>Orange County, California, is a region of stunning beaches and vibrant communities, but rising crime rates have begun to impact the sense of security many residents once enjoyed.</p>
                     <p className='mb-[14.4px]'>As the area faces these growing challenges, TRUalert offers a solution, empowering locals with reliable security services to help protect their homes and neighborhoods while preserving the quality of life they cherish. Here are all the areas we serve today.</p>
                   </div>
