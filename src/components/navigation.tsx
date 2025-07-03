@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { usePathname } from 'next/navigation';
 
 function navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <div>
@@ -10,19 +12,49 @@ function navigation() {
         <section className='flex justify-between items-center mx-auto max-w-[1280px] py-8'>
           <div className='flex items-center gap-2'>
             <a href="/">
-            <img className='w-12' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
+              <img className='w-12' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
             </a>
             <a href="/">
-            <img className='w-32 h-auto' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="Trualert Text" />
+              <img className='w-32 h-auto' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="Trualert Text" />
             </a>
           </div>
           <nav>
             <div className='flex text-md'>
-              <a className='mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500' href="/about">About</a>
-              <a className='mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500' href="/blogs">Blogs</a>
-              <a className='mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500' href="/product">Product</a>
-              <a className='mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500' href="/pricing">Pricing</a>
-              <a className='mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500' href="/support">Support</a>
+              <a
+                className={`mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500 ${pathname === '/about' ? 'text-[#FF0F0F]' : ''}`}
+                href="/about"
+                aria-current={pathname === '/about' ? 'page' : undefined}
+              >
+                About
+              </a>
+              <a
+                className={`mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500 ${pathname === '/blogs' ? 'text-[#FF0F0F]' : ''}`}
+                href="/blogs"
+                aria-current={pathname === '/blogs' ? 'page' : undefined}
+              >
+                Blogs
+              </a>
+              <a
+                className={`mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500 ${pathname === '/product' ? 'text-[#FF0F0F]' : ''}`}
+                href="/product"
+                aria-current={pathname === '/product' ? 'page' : undefined}
+              >
+                Product
+              </a>
+              <a
+                className={`mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500 ${pathname === '/pricing' ? 'text-[#FF0F0F]' : ''}`}
+                href="/pricing"
+                aria-current={pathname === '/pricing' ? 'page' : undefined}
+              >
+                Pricing
+              </a>
+              <a
+                className={`mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500 ${pathname === '/support' ? 'text-[#FF0F0F]' : ''}`}
+                href="/support"
+                aria-current={pathname === '/support' ? 'page' : undefined}
+              >
+                Support
+              </a>
             </div>
           </nav>
           <div>
@@ -58,18 +90,58 @@ function navigation() {
           </div>
         </section>
 
-        <div className={`absolute left-0 right-0 mt-23 bg-[#292929] rounded-xs overflow-hidden transition-all duration-500 ${menuOpen ? 'max-h-80' : 'max-h-0'}`}>
+        <div className={`absolute left-0 right-0 z-1 mt-23 bg-[#292929] rounded-xs overflow-hidden transition-all duration-500 ${menuOpen ? 'max-h-80' : 'max-h-0'}`}>
           <nav>
-            <a className={`block py-2.5 px-5 hover:bg-[#3F444B] transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
-              style={{ transitionDelay: '0ms' }} href="/about" onClick={() => setMenuOpen(false)}>About</a>
-            <a className={`block py-2.5 px-5 hover:bg-[#3F444B] transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
-              style={{ transitionDelay: '80ms' }} href="/blogs" onClick={() => setMenuOpen(false)}>Blogs</a>
-            <a className={`block py-2.5 px-5 hover:bg-[#3F444B] transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
-              style={{ transitionDelay: '160ms' }} href="/product" onClick={() => setMenuOpen(false)}>Product</a>
-            <a className={`block py-2.5 px-5 hover:bg-[#3F444B] transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
-              style={{ transitionDelay: '240ms' }} href="/pricing" onClick={() => setMenuOpen(false)}>Pricing</a>
-            <a className={`block py-2.5 px-5 hover:bg-[#3F444B] transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}
-              style={{ transitionDelay: '320ms' }} href="/support" onClick={() => setMenuOpen(false)}>Support</a>
+            <a
+              className={`block py-2.5 px-5 transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                } ${pathname === '/about' ? 'bg-[#3F444B] text-[#E7AE40]' : 'hover:bg-[#3F444B] hover:text-[#E7AE40]'}`}
+              style={{ transitionDelay: '0ms' }}
+              href="/about"
+              onClick={() => setMenuOpen(false)}
+              aria-current={pathname === '/about' ? 'page' : undefined}
+            >
+              About
+            </a>
+            <a
+              className={`block py-2.5 px-5 transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                } ${pathname === '/blogs' ? 'bg-[#3F444B] text-[#E7AE40]' : 'hover:bg-[#3F444B] hover:text-[#E7AE40]'}`}
+              style={{ transitionDelay: '80ms' }}
+              href="/blogs"
+              onClick={() => setMenuOpen(false)}
+              aria-current={pathname === '/blogs' ? 'page' : undefined}
+            >
+              Blogs
+            </a>
+            <a
+              className={`block py-2.5 px-5 transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                } ${pathname === '/product' ? 'bg-[#3F444B] text-[#E7AE40]' : 'hover:bg-[#3F444B] hover:text-[#E7AE40]'}`}
+              style={{ transitionDelay: '160ms' }}
+              href="/product"
+              onClick={() => setMenuOpen(false)}
+              aria-current={pathname === '/product' ? 'page' : undefined}
+            >
+              Product
+            </a>
+            <a
+              className={`block py-2.5 px-5 transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                } ${pathname === '/pricing' ? 'bg-[#3F444B] text-[#E7AE40]' : 'hover:bg-[#3F444B] hover:text-[#E7AE40]'}`}
+              style={{ transitionDelay: '240ms' }}
+              href="/pricing"
+              onClick={() => setMenuOpen(false)}
+              aria-current={pathname === '/pricing' ? 'page' : undefined}
+            >
+              Pricing
+            </a>
+            <a
+              className={`block py-2.5 px-5 transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                } ${pathname === '/support' ? 'bg-[#3F444B] text-[#E7AE40]' : 'hover:bg-[#3F444B] hover:text-[#E7AE40]'}`}
+              style={{ transitionDelay: '320ms' }}
+              href="/support"
+              onClick={() => setMenuOpen(false)}
+              aria-current={pathname === '/support' ? 'page' : undefined}
+            >
+              Support
+            </a>
           </nav>
         </div>
       </div>

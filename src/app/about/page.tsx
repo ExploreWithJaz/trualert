@@ -141,7 +141,7 @@ function page() {
                 <h2>Our Team</h2>
               </div>
               <div>
-                <img className='rounded-[20px]' src="/layer-0-2.png" alt="Three Male Looking at the Camera" data-aos="fade-in" />
+                <img className='rounded-[20px]' src="https://trualert.com/wp-content/uploads/2024/09/Layer-0-2.png" alt="Three Male Looking at the Camera" data-aos="fade-in" />
               </div>
               <div className='flex flex-row flex-wrap md:flex-nowrap md:grid grid-cols-2 xl:flex gap-10 mt-4'>
                 <div className='flex flex-col gap-5'>
@@ -230,21 +230,21 @@ function page() {
                 </div>
               </div>
               {/* Gallery Photos */}
-              <div className='flex flex-row flex-wrap lg:flex-nowrap justify-evenly md:justify-center items-center gap-5 md:gap-7.5 w-full p-2.5' data-aos="fade-in">
+              <div className='flex flex-row flex-wrap lg:flex-nowrap justify-evenly md:justify-center items-center gap-5 md:gap-7.5 w-full p-2.5'>
                 <div className='md:pt-22.5'>
-                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] rounded-[20px] object-cover object-center md:mt-22.5' src="remove-2-223x300.png" alt="" />
+                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] rounded-[20px] object-cover object-center md:mt-22.5' src="remove-2-223x300.png" alt="" data-aos="fade-in"/>
                 </div>
                 <div>
-                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] rounded-[20px] object-cover object-center  md:mt-22.5' src="/Layer-0-3-223x300.png" alt="" />
+                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] rounded-[20px] object-cover object-center  md:mt-22.5' src="/Layer-0-3-223x300.png" alt="" data-aos="fade-in"/>
                 </div>
                 <div className='md:pt-22.5'>
-                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] rounded-[20px] object-cover object-center md:mt-22.5' src="remove-1-223x300.png" alt="" />
+                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] rounded-[20px] object-cover object-center md:mt-22.5' src="remove-1-223x300.png" alt="" data-aos="fade-in"/>
                 </div>
                 <div>
-                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] object-cover object-center rounded-[20px] md:mt-22.5' src="/Layer-0-2-768x372.png" alt="" />
+                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] object-cover object-center rounded-[20px] md:mt-22.5' src="/Layer-0-2-768x372.png" alt="" data-aos="fade-in"/>
                 </div>
                 <div className='md:pt-22.5'>
-                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] object-cover object-center rounded-[20px] md:mt-22.5' src="/Layer-0-4.png" alt="" />
+                  <img className='w-[200px] h-[230px] lg:w-[286px] lg:h-[385px] object-cover object-center rounded-[20px] md:mt-22.5' src="/Layer-0-4.png" alt="" data-aos="fade-in"/>
                 </div>
               </div>
             </div>
