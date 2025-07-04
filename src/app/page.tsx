@@ -22,7 +22,7 @@ function page() {
       <Navigation />
       <Background />
       <div>
-        <section className='flex flex-col items-center max-w-[850px] mx-auto gap-5 text-center mt-15 px-5'>
+        <section className='flex flex-col items-center max-w-[850px] mx-auto gap-5 text-center mt-20 px-5'>
           <div className='text-[47px]/13 md:text-[60px]/13 xl:text-[80px]/21 font-bold w-full'>
             <h1>
               EMERGENCY AID, JUST A <span className='text-[#ff0f0f]'>TAP AWAY</span>
@@ -33,7 +33,7 @@ function page() {
               Experience peace of mind knowing help is just a tap away. TRUalert instantly connects you to professional emergency dispatchers via Noonlight—no tracking, no delays, just real help when you need it most.
             </p>
           </div>
-          <div className='flex flex-wrap justify-center items-center w-full gap-4 md:py-10'>
+          <div className='flex flex-wrap justify-center items-center w-full gap-4 md:py-10 lg:py-2.5'>
             <a href="https://apps.apple.com/us/app/trualert/id6503326659">
               <img className='w-[161px] h-[47px]' src="/App-Store.png" alt="App Store Download Button" />
             </a>

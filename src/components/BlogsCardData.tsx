@@ -10,7 +10,7 @@ const blogsCardData: BlogCard[] = [
   {
     img: '/blogs/Featured-Image-19.png',
     category: 'ADVICE',
-    title: 'Why Most People Ignore Red Flags (And How TRUalert Helps You Respond Faster))',
+    title: 'Why Most People Ignore Red Flags (And How TRUalert Helps You Respond Faster)',
     description: "Red Flags Are Easy to Spot—Until They Aren’t — We’ve...",
     author: 'Ese Roberts',
   },

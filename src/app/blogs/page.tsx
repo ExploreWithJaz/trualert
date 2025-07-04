@@ -82,7 +82,7 @@ function page() {
                 </button>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5 lg:px-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5 lg:px-0 hover:cursor-pointer">
               {currentBlogs.map((card, idx) => (
                 <BlogCard
                   key={startIdx + idx}
