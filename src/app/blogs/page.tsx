@@ -5,7 +5,7 @@ import Footer from '@/components/footer'
 
 import NavBG from '@/components/nav-bg'
 import BlogCard from '@/components/blogsCard'
-import blogsCardData from '@/components/blogsCardData'
+import BlogsCardData from '@/components/blogsCardData'
 
 function page() {
   return (
@@ -32,7 +32,7 @@ function page() {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {blogsCardData.map((card, idx) => (
+              {BlogsCardData.map((card, idx) => (
                 <BlogCard
                   key={idx}
                   img={card.img}
