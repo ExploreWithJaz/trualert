@@ -4,8 +4,8 @@ import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
 
 import NavBG from '@/components/nav-bg'
-import BlogCard from '@/components/blogsCard'
-import BlogsCardData from '@/components/blogsCardData'
+import BlogCard from '@/components/BlogsCard'
+import BlogsCardData from '@/components/BlogsCardData'
 
 function page() {
   return (
