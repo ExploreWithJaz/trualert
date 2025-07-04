@@ -4,7 +4,7 @@
 :root {
   --background: #141414;
   --foreground: #ededed;
-  --font-sans: var(--font-inter);
+  --font-sans: 'Inter', sans-serif;
 }
 
 @theme inline {
