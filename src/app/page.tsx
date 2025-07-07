@@ -23,13 +23,13 @@ function page() {
       <Background />
       <div>
         <section className='flex flex-col items-center max-w-[850px] mx-auto gap-5 text-center mt-20 px-5'>
-          <div className='text-[47px]/13 md:text-[60px]/13 xl:text-[80px]/21 font-bold w-full'>
+          <div className='text-[47px]/13 md:text-[60px]/13 xl:text-[80px]/[86px] font-bold w-full'>
             <h1>
               EMERGENCY AID, JUST A <span className='text-[#ff0f0f]'>TAP AWAY</span>
             </h1>
           </div>
           <div className='max-w-[588.8px] h-auto mb-3.5'>
-            <p className='text-white text-md xl:text-lg text-center leading-7 tracking-normal xl:tracking-wider sm:mb-[14.4px]'>
+            <p className='text-white text-md xl:text-lg text-center font-light leading-7 tracking-normal xl:tracking-wider sm:mb-[14.4px]'>
               Experience peace of mind knowing help is just a tap away. TRUalert instantly connects you to professional emergency dispatchers via Noonlight—no tracking, no delays, just real help when you need it most.
             </p>
           </div>

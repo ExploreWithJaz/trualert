@@ -34,9 +34,12 @@ const sections: Section[] = [
 ];
 
 const ScrollEffect: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const [activeIndex, setActiveIndex] = useState<number>(-1); // Start with -1 to show default image
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // Default image when no section is active
+  const defaultImage = '/Login.png'; // Adjust path as needed
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -49,7 +52,6 @@ const ScrollEffect: React.FC = () => {
         });
       },
       {
-        // Modified observer settings for better detection
         rootMargin: '-40% 0px -40% 0px',
         threshold: 0.1
       }
@@ -66,35 +68,36 @@ const ScrollEffect: React.FC = () => {
     };
   }, []);
 
-  // Add console log for debugging
   useEffect(() => {
     console.log("Active index changed to:", activeIndex);
   }, [activeIndex]);
 
+  // Determine which image to show
+  const currentImage = activeIndex >= 0 ? sections[activeIndex]?.image : defaultImage;
 
   return (
     <div className="relative w-full" ref={containerRef}>
-    {/* Sticky Phone Container - Will stay centered */}
-    <div className="sticky top-0 left-0 right-0 bottom-0 h-screen px-20 mt-[-60px]">
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-[600px] flex items-center justify-center">
-        <img
-          src={sections[activeIndex]?.image}
-          alt="Phone"
-          className="w-[300px] max-w-full max-h-full object-contain transition-all duration-700 ease-in-out"
-          style={{ filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))' }}
-        />
+      {/* Sticky Phone Container - Will stay centered */}
+      <div className="sticky top-0 left-0 right-0 bottom-0 h-screen px-20 mt-[-60px]">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-[600px] flex items-center justify-center">
+          <img
+            src={currentImage}
+            alt="Phone"
+            className="w-[300px] max-w-full max-h-full object-contain transition-all duration-700 ease-in-out"
+            style={{ filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))' }}
+          />
+        </div>
       </div>
-    </div>
 
-    {/* Scrollable Content */}
-    <div className="relative">
-      {sections.map((section, idx) => (
-        <div
-          key={idx}
-          ref={(el) => { sectionRefs.current[idx] = el; }}
-          data-index={idx}
-          className="h-[635px] flex items-center px-20"
-        >
+      {/* Scrollable Content */}
+      <div className="relative">
+        {sections.map((section, idx) => (
+          <div
+            key={idx}
+            ref={(el) => { sectionRefs.current[idx] = el; }}
+            data-index={idx}
+            className="h-[635px] flex items-center px-20"
+          >
             <div className="w-full max-w-[1140px] mx-auto">
               <div
                 className={`flex items-center ${section.position === 'left'
@@ -120,7 +123,7 @@ const ScrollEffect: React.FC = () => {
           </div>
         ))}
         {/* Add spacer div after all sections */}
-      <div className="h-[15vh]"></div>
+        <div className="h-[15vh]"></div>
       </div>
     </div>
   );
