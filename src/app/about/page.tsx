@@ -24,13 +24,13 @@ function page() {
               <div className='flex justify-center items-center w-full'>
                 <NavBG />
                 <div className='w-[108px] h-auto p-5 bg-[#FFF8F8] rounded-[21px]' data-aos="fade-up">
-                  <img src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Light-Mode.svg" alt="TRUalert White Logo" />
+                  <img src="/LogoMark-Light-Mode.svg" alt="TRUalert White Logo" />
                 </div>
               </div>
               {/* Title Section */}
               <div className='flex flex-wrap justify-center gap-5 lg:gap-7.5 xl:gap-8 items-center w-full mt-5 px-5 md:mt-10 md:px-0 xl:mt-16'>
                 <p className='text-[32px] md:text-[42px] lg:text-7xl font-bold' data-aos="fade-in" data-aos-delay="100">How</p>
-                <img className='w-auto h-7.5 lg:h-13' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="TRUalert Dark Mode Logo" />
+                <img className='w-auto h-7.5 lg:h-13' src="/Wordmark-Dark-Mode.svg" alt="TRUalert Dark Mode Logo" />
                 <p className='text-[32px] md:text-[42px] lg:text-7xl font-bold' data-aos="fade-in" data-aos-delay="100">began</p>
               </div>
               {/* Description Section */}
@@ -141,7 +141,7 @@ function page() {
                 <h2>Our Team</h2>
               </div>
               <div>
-                <img className='rounded-[20px]' src="https://trualert.com/wp-content/uploads/2024/09/Layer-0-2.png" alt="Three Male Looking at the Camera" data-aos="fade-in" />
+                <img className='rounded-[20px]' src="/Layer-0-2-1024x495.png" alt="Three Male Looking at the Camera" data-aos="fade-in" />
               </div>
               <div className='flex flex-row flex-wrap md:flex-nowrap md:grid grid-cols-2 xl:flex gap-10 mt-4'>
                 <div className='flex flex-col gap-5'>

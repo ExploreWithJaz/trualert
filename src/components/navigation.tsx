@@ -12,10 +12,10 @@ function navigation() {
         <section className='flex justify-between items-center mx-auto max-w-[1280px] py-8'>
           <div className='flex items-center gap-2'>
             <a href="/">
-              <img className='w-12' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
+              <img className='w-12' src="/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
             </a>
             <a href="/">
-              <img className='w-32 h-auto' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="Trualert Text" />
+              <img className='w-32 h-auto' src="/Wordmark-Dark-Mode.svg" alt="Trualert Text" />
             </a>
           </div>
           <nav>
@@ -36,21 +36,21 @@ function navigation() {
               </a>
               <a
                 className={`mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500 ${pathname === '/product' ? 'text-[#FF0F0F]' : ''}`}
-                href="/product"
+                href="/"
                 aria-current={pathname === '/product' ? 'page' : undefined}
               >
                 Product
               </a>
               <a
                 className={`mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500 ${pathname === '/pricing' ? 'text-[#FF0F0F]' : ''}`}
-                href="/pricing"
+                href="/"
                 aria-current={pathname === '/pricing' ? 'page' : undefined}
               >
                 Pricing
               </a>
               <a
                 className={`mx-1.5 p-2 hover:text-[#FF0F0F] transition ease-in-out duration-500 ${pathname === '/support' ? 'text-[#FF0F0F]' : ''}`}
-                href="/support"
+                href="/"
                 aria-current={pathname === '/support' ? 'page' : undefined}
               >
                 Support
@@ -59,7 +59,7 @@ function navigation() {
           </nav>
           <div>
             <button className='bg-[#920A0A] text-white text-[15px] px-6 py-2 rounded-md hover:bg-[#920a0a] transition duration-1000'>
-              <a href="/signup">Sign Up</a>
+              <a href="/">Sign Up</a>
             </button>
           </div>
         </section>
@@ -69,8 +69,8 @@ function navigation() {
         <section className='flex flex-row justify-between items-center py-7.5 w-full'>
           <div>
             <a className='flex items-center gap-1.5 md:gap-5' href="/">
-              <img className='w-[34px] md:w-[48px] h-auto' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
-              <img className='w-[90px] md:w-[130px] h-auto' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="Trualert Text" />
+              <img className='w-[34px] md:w-[48px] h-auto' src="/LogoMark-Dark-Mode.svg" alt="Trualert Logo" />
+              <img className='w-[90px] md:w-[130px] h-auto' src="/Wordmark-Dark-Mode.svg" alt="Trualert Text" />
             </a>
           </div>
           <div className='p-1.5'>
@@ -116,7 +116,7 @@ function navigation() {
               className={`block py-2.5 px-5 transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
                 } ${pathname === '/product' ? 'bg-[#3F444B] text-[#E7AE40]' : 'hover:bg-[#3F444B] hover:text-[#E7AE40]'}`}
               style={{ transitionDelay: '160ms' }}
-              href="/product"
+              href="/"
               onClick={() => setMenuOpen(false)}
               aria-current={pathname === '/product' ? 'page' : undefined}
             >
@@ -126,7 +126,7 @@ function navigation() {
               className={`block py-2.5 px-5 transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
                 } ${pathname === '/pricing' ? 'bg-[#3F444B] text-[#E7AE40]' : 'hover:bg-[#3F444B] hover:text-[#E7AE40]'}`}
               style={{ transitionDelay: '240ms' }}
-              href="/pricing"
+              href="/"
               onClick={() => setMenuOpen(false)}
               aria-current={pathname === '/pricing' ? 'page' : undefined}
             >
@@ -136,7 +136,7 @@ function navigation() {
               className={`block py-2.5 px-5 transition-all duration-300 ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
                 } ${pathname === '/support' ? 'bg-[#3F444B] text-[#E7AE40]' : 'hover:bg-[#3F444B] hover:text-[#E7AE40]'}`}
               style={{ transitionDelay: '320ms' }}
-              href="/support"
+              href="/"
               onClick={() => setMenuOpen(false)}
               aria-current={pathname === '/support' ? 'page' : undefined}
             >

@@ -56,7 +56,7 @@ function page() {
                     <PulseEffect />
                   </div>
                   <img
-                    src="https://trualert.com/wp-content/uploads/2025/05/homepage.png"
+                    src="/phone.png"
                     alt="Phone"
                     className="relative z-10 w-[280px] sm:w-full h-auto"
                   />
@@ -145,21 +145,21 @@ function page() {
                 <h3 className='text-3xl font-bold'>AFFORDABLE SUBSCRIPTION</h3>
                 <p className='text-md mb-[14.4px]'>Choose the subscription plan that perfectly fits your needs and preferences.</p>
               </div>
-              <img className='w-[250px] h-auto' src="https://trualert.com/wp-content/uploads/2025/05/Group-39265-1.png" alt="TRUalert Pricing Phone" />
+              <img className='w-[250px] h-auto' src="/Group-39257-496x1024.png" alt="TRUalert Pricing Phone" />
             </div>
             <div className='flex flex-col items-center gap-5'>
               <div className='flex flex-col gap-5 text-center p-5'>
                 <h3 className='text-3xl font-bold'>ONE TAP FOR IMMEDIATE SAFETY</h3>
                 <p className='text-md mb-[14.4px]'>Quickly summon help with a single tap. Provide additional info to ensure rapid response to your exact location.</p>
               </div>
-              <img className='w-[250px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/iPhone-14-Pro-Max-1.png" alt="TRUalert Location Phone" />
+              <img className='w-[250px] h-auto' src="/Group-39255-1-496x1024.png" alt="TRUalert Location Phone" />
             </div>
             <div className='flex flex-col items-center gap-5'>
               <div className='flex flex-col gap-5 text-center p-5'>
                 <h3 className='text-3xl font-bold'>TRACK YOUR SAFETY HISTORY</h3>
                 <p className='text-md mb-[14.4px]'>Easily view your emergency activity log, including button presses, locations, and response times, for complete peace of mind.</p>
               </div>
-              <img className='w-[250px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/iPhone-14-Pro-Max-3.png" alt="TRUalert Account History Phone" />
+              <img className='w-[250px] h-auto' src="/Group-39258-496x1024.png" alt="TRUalert Account History Phone" />
             </div>
           </div>
         </section>
@@ -168,7 +168,7 @@ function page() {
           {/* Desktop View @ 1280px and above */}
           <div className='hidden xl:block px-20 m-0'>
             <div className='flex flex-row items-end justify-center py-10 gap-[79px]'>
-              <img className='w-full max-w-[625.52px] h-auto' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Phone Screen Login" data-aos="fade-up" />
+              <img className='w-full max-w-[625.52px] h-auto' src="/Tap.png" alt="TRUalert Phone Screen Login" data-aos="fade-up" />
               <div className='flex flex-col  gap-10 text-left h-full w-[575.48px] tracking-wider' data-aos="fade-up" data-aos-delay="200">
                 <div className='flex flex-col gap-5'>
                   <p className='text-[32px] text-[#FF0F0F] font-semibold mb-[14.4px]'>EVOLVING FOR A</p>
@@ -208,7 +208,7 @@ function page() {
                 </div>
               </div>
               <div className='flex flex-col items-center' data-aos="fade-up" data-aos-delay="200">
-                <img className='w-full max-w-[640px] h-auto p-2.5' src="https://trualert.com/wp-content/uploads/2025/04/Tap.png" alt="TRUalert Login Screen" />
+                <img className='w-full max-w-[640px] h-auto p-2.5' src="/Tap.png" alt="TRUalert Login Screen" />
                 <ul className='flex flex-wrap gap-5 text-sm mt-17.5 p-5'>
                   <li><a href="">Privacy & Security</a></li>
                   <li><a className='text-[#FF0F0F] hover:text-[#FFFFFF] transition duration-300 ease-in-out' href="">Terms</a></li>

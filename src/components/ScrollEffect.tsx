@@ -15,21 +15,21 @@ const sections: Section[] = [
     title: 'AFFORDABLE SUBSCRIPTION',
     description:
       'Choose the subscription plan that perfectly fits your needs and preferences.',
-    image: 'https://trualert.com/wp-content/uploads/2025/05/Group-39265-1.png',
+    image: '/Group-39257-496x1024.png',
   },
   {
     position: 'right',
     title: 'ONE TAP FOR IMMEDIATE SAFETY',
     description:
       'Quickly summon help with a single tap. Provide additional info to ensure rapid response to your exact location.',
-    image: 'https://trualert.com/wp-content/uploads/2025/04/iPhone-14-Pro-Max-1.png',
+    image: '/Group-39255-1-496x1024.png',
   },
   {
     position: 'left',
     title: 'TRACK YOUR SAFETY HISTORY',
     description:
       'Easily view your emergency activity log, including button presses, locations, and response times, for complete peace of mind.',
-    image: 'https://trualert.com/wp-content/uploads/2025/04/iPhone-14-Pro-Max-3.png',
+    image: '/Group-39258-496x1024.png',
   },
 ];
 

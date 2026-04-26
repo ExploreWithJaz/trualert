@@ -17,8 +17,8 @@ function footer() {
                     {/* header */}
                     <div className='flex flex-row flex-wrap md:flex-nowrap justify-between items-center gap-5'>
                         <div className='flex flex-row items-center w-full gap-2.5'>
-                            <img className='w-12 h-auto' src="https://trualert.com/wp-content/uploads/2024/08/LogoMark-Dark-Mode.svg" alt="TRUalert Logo" />
-                            <img className='w-32.5' src="https://trualert.com/wp-content/uploads/2024/08/Wordmark-Dark-Mode.svg" alt="TRUalert Logo Text" />
+                            <img className='w-12 h-auto' src="/LogoMark-Dark-Mode.svg" alt="TRUalert Logo" />
+                            <img className='w-32.5' src="/Wordmark-Dark-Mode.svg" alt="TRUalert Logo Text" />
                         </div>
                         <div className='flex flex-row flex-wrap md:justify-end w-full items-center gap-5'>
                             <a href="https://apps.apple.com/us/app/trualert/id6503326659">
@@ -56,21 +56,21 @@ function footer() {
                                         About
                                     </a>
                                     <a
-                                        href="/terms"
+                                        href="/"
                                         className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
                                         aria-current={pathname === '/terms' ? 'page' : undefined}
                                     >
                                         Terms
                                     </a>
                                     <a
-                                        href="/privacy-and-security"
+                                        href="/"
                                         className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
                                         aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
                                     >
                                         Privacy and Security
                                     </a>
                                     <a
-                                        href="/blogs"
+                                        href="/"
                                         className={pathname === '/blogs' ? 'text-[#FF0F0F]' : ''}
                                         aria-current={pathname === '/blogs' ? 'page' : undefined}
                                     >
@@ -80,14 +80,14 @@ function footer() {
                             </div>
                             <div className='flex flex-row text-xs text-[#6d6d6d] font-bold'>
                                 <a
-                                    href="/privacy-and-security"
+                                    href="/"
                                     className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
                                     aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
                                 >
                                     Privacy and Security
                                 </a>
                                 <a
-                                    href="/terms"
+                                    href="/"
                                     className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
                                     aria-current={pathname === '/terms' ? 'page' : undefined}
                                 >
@@ -149,14 +149,14 @@ function footer() {
                                             About
                                         </a>
                                         <a
-                                            href="/terms"
+                                            href="/"
                                             className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
                                             aria-current={pathname === '/terms' ? 'page' : undefined}
                                         >
                                             Terms
                                         </a>
                                         <a
-                                            href="/privacy-and-security"
+                                            href="/"
                                             className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
                                             aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
                                         >
@@ -174,14 +174,14 @@ function footer() {
                                 <div>
                                     <div className='flex flex-row text-xs text-[#6d6d6d] font-bold'>
                                         <a
-                                            href="/privacy-and-security"
+                                            href="/"
                                             className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
                                             aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
                                         >
                                             Privacy and Security
                                         </a>
                                         <a
-                                            href="/terms"
+                                            href="/"
                                             className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
                                             aria-current={pathname === '/terms' ? 'page' : undefined}
                                         >
@@ -242,14 +242,14 @@ function footer() {
                                             About
                                         </a>
                                         <a
-                                            href="/terms"
+                                            href="/"
                                             className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
                                             aria-current={pathname === '/terms' ? 'page' : undefined}
                                         >
                                             Terms
                                         </a>
                                         <a
-                                            href="/privacy-and-security"
+                                            href="/"
                                             className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
                                             aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
                                         >
@@ -266,14 +266,14 @@ function footer() {
                                 </div>
                                 <div className='flex flex-row text-xs text-[#6d6d6d] font-bold'>
                                     <a
-                                        href="/privacy-and-security"
+                                        href="/"
                                         className={pathname === '/privacy-and-security' ? 'text-[#FF0F0F]' : ''}
                                         aria-current={pathname === '/privacy-and-security' ? 'page' : undefined}
                                     >
                                         Privacy and Security
                                     </a>
                                     <a
-                                        href="/terms"
+                                        href="/"
                                         className={pathname === '/terms' ? 'text-[#FF0F0F]' : ''}
                                         aria-current={pathname === '/terms' ? 'page' : undefined}
                                     >
